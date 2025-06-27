@@ -52,3 +52,8 @@ textarea, input{
 .assCountFig > div{
     width: 450px;    
 }
+
+
+.dash-cell:hover{
+    background-color: rgb(162, 189, 189);
+}

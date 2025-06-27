@@ -1,20 +1,24 @@
 import pandas as pd
+import plotly.express as px
 import os
 import dash
 from dash import Dash, html, dcc, dash_table
-import plotly.express as px
+import dash_bootstrap_components as dbc
 
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
+
 def init_dataTbl(server):
-    
-        # Construct path to CSV file
+    # Construct path to CSV file
     csv_path = os.path.join(BASE_DIR, 'app_modules', 'assets', 'data', 'cmdb_ci_computer.csv')
 
-
-    # Initialize Dash app with Flask server and route prefix
-    tbl_app = dash.Dash(__name__, server=server, url_base_pathname='/tbl/')    
-
+    # Initialize Dash app with Flask server and Bootstrap theme
+    tbl_app = dash.Dash(
+        __name__,
+        server=server,
+        url_base_pathname='/tbl/',
+        external_stylesheets=[dbc.themes.BOOTSTRAP]
+    )
 
     # Read CSV into DataFrame with safe encoding
     df = pd.read_csv(csv_path, encoding='ISO-8859-1')
@@ -27,23 +31,28 @@ def init_dataTbl(server):
         count = df['asset_tag'].astype(str).str.startswith(prefix).sum()
         count_data.append({'Prefix': prefix, 'Count': count})
 
-    # Create Summary Table for Counts
-    count_table = dash_table.DataTable(
-        columns=[
-            {"name": "Asset_Yr", "id": "Prefix"},
-            {"name": "Count", "id": "Count"}
+    # Create Summary Table wrapped in Bootstrap Card
+    count_table = dbc.Card(
+        [
+            dbc.CardHeader("Asset Tag Count Summary"),
+            dbc.CardBody(
+                dash_table.DataTable(
+                    columns=[
+                        {"name": "Asset_Yr", "id": "Prefix"},
+                        {"name": "Count", "id": "Count"}
+                    ],
+                    data=count_data,
+                    style_table={'overflowX': 'auto', 'width': '100%'},
+                    style_cell={'textAlign': 'left', 'padding': '5px'},
+                    style_header={'backgroundColor': '#f8f9fa', 'fontWeight': 'bold'}
+                )
+            )
         ],
-        data=count_data,
-        style_table={'width': 'max-content', 'margin-bottom': '20px'},
-        style_cell={'textAlign': 'left', 'padding': '5px'},
-        style_header={'backgroundColor': 'lightgrey', 'fontWeight': 'bold'}
+        className="mb-4"
     )
 
-
-    # creating a Bar Chart..
+    # Create Bar Chart wrapped in Bootstrap Card
     count_df = pd.DataFrame(count_data)
-
-    # Create bar chart using Plotly Express
     bar_fig = px.bar(
         count_df,
         x='Prefix',
@@ -51,27 +60,55 @@ def init_dataTbl(server):
         title='Asset Tag Count by Year',
         text='Count'
     )
-
     bar_fig.update_traces(textposition='outside')
 
-
-    # Create Main Data Table
-    main_table = dash_table.DataTable(
-        columns=[{"name": i, "id": i} for i in df.columns],
-        data=df.to_dict('records'),
-        page_size=100,
-        style_table={'overflowX': 'auto'},
-        style_cell={'textAlign': 'left', 'padding': '5px'},
-        style_header={'backgroundColor': 'lightgrey', 'fontWeight': 'bold'}
+    bar_chart = dbc.Card(
+        [
+            dbc.CardHeader("Asset Tag Yearly Distribution"),
+            dbc.CardBody(
+                dcc.Graph(figure=bar_fig)
+            )
+        ],
+        className="mb-4"
     )
 
-    tbl_app.layout = html.Div(children=[
-        html.H3("Mayenne Coumputer Asset Summary"),
-        #count_table,
-        html.Div(dcc.Graph(figure=bar_fig),className='assCountFig'),
-        html.H3("CI Computer Data"),
-        html.Code(", ".join(df.columns)),
-        main_table
-    ])
+    # Main Data Table wrapped in Bootstrap Card
+    main_table = dbc.Card(
+        [
+            dbc.CardHeader("CI Computer Data"),
+            dbc.CardBody(
+                [
+                    html.P("Available Columns:"),
+                    html.Code(", ".join(df.columns)),
+                    dash_table.DataTable(
+                        columns=[{"name": i, "id": i} for i in df.columns],
+                        data=df.to_dict('records'),
+                        page_size=100,
+                        style_table={'overflowX': 'auto', 'maxHeight': '600px', 'overflowY': 'auto'},
+                        style_cell={'textAlign': 'left', 'padding': '5px'},
+                        style_header={'backgroundColor': '#f8f9fa', 'fontWeight': 'bold'},
+                        style_data_conditional=[{
+                                                'if': {'state': 'active'},  # This targets hovered cells
+                                                'backgroundColor': '#D6EAF8',  # Light blue, you can customize
+                                                'color': 'black',
+                                                'cursor': 'pointer'  # Optional, adds pointer cursor on hover
+                                                }]
+                    )
+                ]
+            )
+        ]
+    )
+
+    # Full Layout with Bootstrap Grid
+    tbl_app.layout = dbc.Container(
+        [
+            html.H2("Mayenne Computer Asset Summary", className="mt-4 mb-4"),
+            count_table,
+            bar_chart,
+            main_table
+        ],
+        fluid=True,
+        className="p-4"
+    )
 
     return tbl_app

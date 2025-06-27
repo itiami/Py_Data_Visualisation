@@ -1,6 +1,7 @@
 # Flask and Web Development
 Flask
 Dash >=3.0.4
+dash-bootstrap-components
 Flask-SQLAlchemy>=3.0.0
 Flask-Migrate>=4.0.0
 
