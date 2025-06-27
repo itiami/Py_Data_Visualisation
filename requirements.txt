@@ -31,3 +31,4 @@ jupyterlab>=4.0.0
 
 # Optional Extras
 openpyxl>=3.1.0           # Excel file reading/writing
+qrcode>=8.2

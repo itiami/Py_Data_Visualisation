@@ -1,8 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 
+html{
+    margin: 0;
+    padding: 0;
+}
+
 
 body {
     font-family: "Varela Round", sans-serif;
     font-weight: 400;
     font-style: normal;
+    padding: 0 10%;
+}
+
+
+.qrCode{
+    display: flex;
+    justify-content: center;
+}
+
+.assCountFig{
+    display: flex;
+    justify-content: center;
+
+}
+
+.assCountFig > div{
+    width: 450px;    
 }

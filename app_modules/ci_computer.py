@@ -1,8 +1,8 @@
 import pandas as pd
 import os
 import dash
-from dash import dash_table
-from dash import html
+from dash import Dash, html, dcc, dash_table
+import plotly.express as px
 
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
@@ -39,6 +39,22 @@ def init_dataTbl(server):
         style_header={'backgroundColor': 'lightgrey', 'fontWeight': 'bold'}
     )
 
+
+    # creating a Bar Chart..
+    count_df = pd.DataFrame(count_data)
+
+    # Create bar chart using Plotly Express
+    bar_fig = px.bar(
+        count_df,
+        x='Prefix',
+        y='Count',
+        title='Asset Tag Count by Year',
+        text='Count'
+    )
+
+    bar_fig.update_traces(textposition='outside')
+
+
     # Create Main Data Table
     main_table = dash_table.DataTable(
         columns=[{"name": i, "id": i} for i in df.columns],
@@ -49,10 +65,12 @@ def init_dataTbl(server):
         style_header={'backgroundColor': 'lightgrey', 'fontWeight': 'bold'}
     )
 
-    tbl_app.layout = html.Div([
-        html.H3("Asset Tag Count Summary"),
-        count_table,
+    tbl_app.layout = html.Div(children=[
+        html.H3("Mayenne Coumputer Asset Summary"),
+        #count_table,
+        html.Div(dcc.Graph(figure=bar_fig),className='assCountFig'),
         html.H3("CI Computer Data"),
+        html.Code(", ".join(df.columns)),
         main_table
     ])
 
