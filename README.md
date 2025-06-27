@@ -226,7 +226,7 @@ python run.py
 
 ### ```Output in Terminal```
 ```
-(venv) PS C:\Users\aa757880\Apps\DevProject\nPy> py run.py
+(venv) PS C:\Users\numan\Apps\DevProject\nPy> py run.py
  * Serving Flask app 'app_settings'
  * Debug mode: on
 WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
