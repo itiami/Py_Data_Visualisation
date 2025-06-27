@@ -4,24 +4,17 @@ import dash
 from dash import dash_table
 from dash import html
 
-robotoFont = [
-    "https://fonts.googleapis.com/css2?family=Roboto&display=swap"
-]
+BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
 def init_dataTbl(server):
-    base_dir = os.path.dirname(os.path.dirname(__file__))
+    
+        # Construct path to CSV file
+    csv_path = os.path.join(BASE_DIR, 'app_modules', 'assets', 'data', 'cmdb_ci_computer.csv')
+
 
     # Initialize Dash app with Flask server and route prefix
-    tbl_app = dash.Dash(
-        __name__,
-        server=server,
-        url_base_pathname='/tbl/',
-        external_stylesheets=robotoFont
-    )
-    
-    # Construct path to CSV file
-    csv_path = os.path.join(os.path.dirname(__file__), 'cmdb_ci_computer.csv')
-    # csv_path = os.path.join(base_dir, 'static', 'cmdb_ci_computer.csv')
+    tbl_app = dash.Dash(__name__, server=server, url_base_pathname='/tbl/')    
+
 
     # Read CSV into DataFrame with safe encoding
     df = pd.read_csv(csv_path, encoding='ISO-8859-1')
@@ -58,7 +51,6 @@ def init_dataTbl(server):
 
     tbl_app.layout = html.Div([
         html.H3("Asset Tag Count Summary"),
-        html.H4(os.path.join(base_dir, 'static', 'cmdb_ci_computer.csv')),
         count_table,
         html.H3("CI Computer Data"),
         main_table

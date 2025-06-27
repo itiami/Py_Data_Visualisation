@@ -4,8 +4,257 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Python DataSet</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
+
 <body>
-    <h3>for Python</h3>
+    <div>       
+
+    <h1>📊 Data Visualization with Flask</h1>
+
+    <p>A <strong>Data Visualization</strong> web application built using <strong>Flask</strong>, <strong>Dash</strong>, <strong>Pandas</strong>, <strong>Matplotlib</strong>, <strong>SciPy</strong>, <strong>NumPy</strong>, and more.</p>
+
+    <p>This project provides interactive dashboards and statistical visualizations for data analysis using modern Python web technologies.</p>
+
+    <hr>
+
+    <h2>🔧 Technologies Used</h2>
+    <ul>
+        <li><strong>Flask</strong> - Lightweight web framework</li>
+        <li><strong>Dash</strong> - Interactive data visualization dashboards</li>
+        <li><strong>Pandas</strong> - Data analysis and manipulation</li>
+        <li><strong>Matplotlib</strong>, <strong>Seaborn</strong>, <strong>Plotly</strong> - Data visualization libraries</li>
+        <li><strong>NumPy</strong>, <strong>SciPy</strong>, <strong>Scikit-learn</strong>, <strong>Statsmodels</strong> - Scientific computing & machine learning</li>
+        <li><strong>Flask-SQLAlchemy</strong>, <strong>Flask-Migrate</strong> - Database ORM & migrations</li>
+        <li><strong>JupyterLab</strong>, <strong>IPython</strong> - Development utilities</li>
+    </ul>
+
+    <hr>
+
+    <h2>👨‍💻 Author</h2>
+    <p><strong>ABDULLAH al numan</strong></p>
+
+    <hr>
+
+    <h2>⚙️ Setup Instructions (Windows)</h2>
+
+    <h3>1️⃣ Install Python (If not installed)</h3>
+    <p>✅ Download Python from the official website:</p>
+    <p>➡️ <a href="https://www.python.org/downloads/windows/" target="_blank">https://www.python.org/downloads/windows/</a></p>
+    <p>During installation, ensure <strong>"Add Python to PATH"</strong> is checked.</p>
+
+    <hr>
+
+    <h3>2️⃣ Add Python to Environment Variables (If missed during install)</h3>
+    <ul>
+        <li>Open <strong>Start Menu → Search: Environment Variables</strong></li>
+        <li>Edit <strong>System variables → Path</strong></li>
+        <li>Add the path to Python and Scripts (Example):</li>
+    </ul>
+    <pre>
+        C:\Users&lt;YourUsername&gt;\AppData\Local\Programs\Python\Python311\
+        C:\Users&lt;YourUsername&gt;\AppData\Local\Programs\Python\Python311\Scripts\
+    </pre>
+
+    <hr>
+
+    <h3>3️⃣ Clear Python Cache (If needed)</h3>
+    <p>If you have a corrupted install or facing issues:</p>
+    <pre>
+        py -m pip cache purge
+    </pre>
+    <p>Or manually delete the cache folder:</p>
+    <pre>
+        %LocalAppData%\pip\Cache
+    </pre>
+
+    <hr>
+
+    <h2>🏗️ Creating the Python Project</h2>
+
+    <h3>4️⃣ Project Directory Structure Example</h3>
+    <pre>
+
+        NPY
+        ├── app_modules
+        │   ├── __pycache__
+        │   ├── assets
+        │   │   ├── css
+        │   │   │   └── style.css
+        │   │   ├── data
+        │   │   │   └── cmdb_ci_computer.csv
+        │   │   ├── img
+        │   │   └── js
+        │   │       └── app.js
+        │   ├── ci_computer.ipynb
+        │   ├── ci_computer.py
+        │   ├── init_anotherApp.py
+        │   └── init_ilocApp.py
+        ├── app_settings
+        │   ├── __pycache__
+        │   ├── static
+        │   │   └── css
+        │   │       └── style.css
+        │   ├── templates
+        │   │   └── index.html
+        │   ├── __init__.py
+        │   └── routes.py
+        ├── venv
+        ├── .env
+        ├── .gitignore
+        ├── README.md
+        ├── requirements.txt
+        └── run.py        
+    </pre>
+
+    <hr>
+
+    <h2>🐍 Virtual Environment Setup</h2>
+
+    <h3>5️⃣ Create Virtual Environment</h3>
+    <pre>
+        py -m venv venv
+    </pre>
+
+    <h3>6️⃣ Activate Virtual Environment</h3>
+    <pre>
+        venv\Scripts\activate
+    </pre>
+    <p>Your terminal should show <code>(venv)</code> indicating it's active.</p>
+
+    <hr>
+
+    <h2>📦 Install Dependencies</h2>
+    <p>Make sure you're in the project directory and <code>venv</code> is activated:</p>
+    <pre>
+        py -m pip install -r requirements.txt --no-cache-dir
+    </pre>
+
+    <hr>
+
+    <h2>📄 <code>requirements.txt</code> Contents</h2>
+    <pre>
+        # Flask and Web Development
+        Flask
+        Dash>=3.0.4
+        Flask-SQLAlchemy>=3.0.0
+        Flask-Migrate>=4.0.0
+        python-dotenv>=1.0.0
+
+        # Database Connectors (Optional)
+        psycopg2-binary>=2.9.0   # PostgreSQL
+        PyMySQL>=1.0.0           # MySQL/MariaDB
+
+        # Data Visualization
+        matplotlib>=3.7.0
+        seaborn>=0.12.0
+        plotly>=5.15.0
+
+        # Scientific Computing
+        numpy>=1.24.0
+        scipy>=1.10.0
+        pandas>=2.0.0
+        scikit-learn>=1.3.0
+        statsmodels>=0.14.0
+
+        # Development Utilities
+        ipython>=8.10.0
+        jupyterlab>=4.0.0
+
+        # Optional Extras
+        openpyxl>=3.1.0
+            </pre>
+
+            <hr>
+
+            <h3><code>app_settings/__init__.py</code></h3>
+            <pre>
+        from flask import Flask
+
+        def create_app():
+            app = Flask(__name__)
+
+            # Register Flask routes
+            from .routes import main
+            app.register_blueprint(main)
+
+            # Register Dash apps from app_module
+            from app_modules.ci_computer import init_dataTbl
+            init_dataTbl(app)
+
+            return app
+            </pre>
+
+            <hr>
+
+            <h3><code>app_settings/routes.py</code></h3>
+            <pre>
+        from flask import Blueprint, render_template
+
+        main = Blueprint('main', __name__)
+
+        @main.route('/')
+        def index():
+            return render_template('index.html')
+            </pre>
+
+            <hr>
+
+            <h3><code>run.py</code></h3>
+            <pre>
+        from app_settings import create_app  # Import create_app method from app directory..
+        import os
+
+        PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
+
+        app_settings = create_app()
+
+        if __name__ == "__main__":
+            app_settings.run(host='0.0.0.0', port=8051, debug=True)
+            </pre>
+
+            <hr>
+
+            <h2>🚀 Running the Flask Application</h2>
+            <p>Ensure your environment is activated:</p>
+            <pre>
+        venv\Scripts\activate
+            </pre>
+            <p>Then, run the app:</p>
+            <pre>
+        python run.py
+    </pre>
+
+    <hr>
+
+    <h3>Output in Terminal</h3>
+    <pre>
+        (venv) PS C:\Users\numan\Apps\DevProject\nPy&gt; py run.py
+        * Serving Flask app 'app_settings'
+        * Debug mode: on
+        WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+        * Running on all addresses (0.0.0.0)
+        * Running on http://127.0.0.1:8051
+        * Running on http://11.161.4.50:8051
+        Press CTRL+C to quit
+        * Restarting with stat
+        * Debugger is active!
+        * Debugger PIN: 398-157-483
+    </pre>
+
+    <hr>
+
+    <h2>🎨 Contributions</h2>
+    <p>Contributions are welcome! Feel free to open issues or submit pull requests.</p>
+
+    <hr>
+
+    <h2>📃 License</h2>
+    <p>This project is open-source under standard license terms.</p>
+
+    <hr>
+
+
+    </div>
 </body>
 </html>

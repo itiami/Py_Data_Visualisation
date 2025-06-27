@@ -1,8 +1,6 @@
 from app_settings import create_app # Import create_app method from app directory..
 import os
 
-PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
-
 app_settings = create_app()
 
 if __name__ == "__main__":

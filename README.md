@@ -74,19 +74,30 @@ Or manually delete the cache folder:
 NPY
 ├── app_modules
 │   ├── __pycache__
+│   ├── assets
+│   │   ├── css
+│   │   │   └── style.css
+│   │   ├── data
+│   │   │   └── cmdb_ci_computer.csv
+│   │   ├── img
+│   │   └── js
+│   │       └── app.js
 │   ├── ci_computer.ipynb
 │   ├── ci_computer.py
-│   ├── cmdb_ci_computer.csv
 │   ├── init_anotherApp.py
 │   └── init_ilocApp.py
 ├── app_settings
 │   ├── __pycache__
 │   ├── static
+│   │   └── css
+│   │       └── style.css
 │   ├── templates
+│   │   └── index.html
 │   ├── __init__.py
 │   └── routes.py
 ├── venv
 ├── .env
+├── .gitignore
 ├── README.md
 ├── requirements.txt
 └── run.py
