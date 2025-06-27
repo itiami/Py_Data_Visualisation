@@ -13,13 +13,34 @@ body {
     padding: 0 10%;
 }
 
+textarea, input{
+    border: none;
+    background: none;
+    padding: 0;
+    margin: 0;
+    outline: none; 
+}
+
 
 .qrCode{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    
+    align-items: center;    
+}
+
+.inputCls{    
+    padding: 5px;
+    width: 100%;
+    margin-bottom: 5px;
+    border-bottom: 2px solid green;
+}
+
+.textareaCls{
+    width: 100%;
+    border-bottom: 2px solid green;
+    min-height: 200px;
+    min-width: 200px;
 }
 
 .assCountFig{

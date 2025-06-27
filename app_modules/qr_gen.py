@@ -18,26 +18,22 @@ def create_qr_code_app(server):
         html.Div([
             html.H2('Single Line QR Generator'),
             html.Div([
-                dcc.Input(id='input-single-line', type='text', placeholder='Enter text', style={'width': '100%'}),
+                dcc.Input(id='input-single-line', type='text', placeholder='Enter text', className='inputCls'),
                 html.Button('Generate QR Code', id='generate-btn-single', n_clicks=0),
                 html.Br(),
                 html.Div(id='qr-output-single')
-            ])
-        ], style={'margin-bottom': '50px', 'padding': '10px', 'border': '1px solid #ccc'}),
+            ],style={'display': 'flex', 'flex-direction':'column'})
+        ], style={'margin-bottom': '50px'}),
 
         html.Div([
             html.H2('Multi Line QR Generator'),
             html.Div([
-                dcc.Textarea(id='input-multi-line', placeholder='Enter text', style={'width': '100%', 'height': '100px'}),
-                html.Button('Generate QR Code', id='generate-btn-multi', n_clicks=0),
+                dcc.Textarea(id='input-multi-line', placeholder='Enter text', className='textareaCls'),
+                html.Button('Generate QR Code', id='generate-btn-multi', n_clicks=0, style={'margin': '5px'}),
                 html.Br(),
                 html.Div(id='qr-output-multi')
-            ])
-        ], style={'padding': '10px', 
-                  'border': '1px solid #ccc',     
-                  'display': 'flex',
-                  'flexDirection': 'column',
-                  'justifyContent': 'center',})
+            ],style={'display': 'flex', 'flex-direction':'column'})
+        ])
     ],className='qrCode')
 
     # Callback for single-line QR generation
