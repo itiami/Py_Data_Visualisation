@@ -16,7 +16,7 @@ def init_dataTbl(server):
     tbl_app = dash.Dash(
         __name__,
         server=server,
-        url_base_pathname='/tbl/',
+        url_base_pathname='/v1/',
         external_stylesheets=[dbc.themes.BOOTSTRAP]
     )
 

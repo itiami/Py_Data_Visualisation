@@ -9,7 +9,13 @@ def create_app():
     app.register_blueprint(main)
 
     # Register Dash apps from app_module
-    from app_modules.ci_computer import init_dataTbl
+    from app_modules.ci_computer_v1 import init_dataTbl
+    init_dataTbl(app)
+
+    from app_modules.ci_computer_v2 import init_dataTbl
+    init_dataTbl(app)
+
+    from app_modules.ci_computer_v3 import init_dataTbl
     init_dataTbl(app)
 
     from app_modules.qr_gen import create_qr_code_app
