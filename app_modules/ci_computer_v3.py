@@ -5,9 +5,8 @@ import dash
 from dash import Dash, html, dcc, dash_table, Input, Output
 import dash_bootstrap_components as dbc
 
-BASE_DIR = os.path.dirname(os.path.dirname(__file__))
-
 def init_dataTbl(server):
+    BASE_DIR = os.path.dirname(os.path.dirname(__file__))
     # Construct path to CSV file
     csv_path = os.path.join(BASE_DIR, 'app_modules', 'assets', 'data', 'cmdb_ci_computer.csv')
 

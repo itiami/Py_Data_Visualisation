@@ -21,5 +21,8 @@ def create_app():
     from app_modules.qr_gen import create_qr_code_app
     create_qr_code_app(app)
 
+    from app_modules.tensorflow_example import tflow
+    tflow(app)
+
 
     return app
