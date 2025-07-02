@@ -46,29 +46,33 @@ def init_dataTbl(server):
         className="mb-4"
     )
 
-    # 2. Scatter Plot Data - Device Type vs Build Type
+    # 2. Line Plot - Device Type vs Build Type Count
     # Determine device type based on name prefix
     df['Device_Type'] = df['name'].apply(
         lambda x: 'Desktop' if str(x).startswith(('com8cc', 'terwd', '8cc')) else 'Laptop'
     )
     
-    scatter_fig = px.scatter(
-        df,
-        x='Device_Type',
-        y='u_build_machine_use',
+    # Group data to count build types by device type
+    grouped_df = df.groupby(['Device_Type', 'u_build_machine_use']).size().reset_index(name='Count')
+
+    line_fig = px.line(
+        grouped_df,
+        x='u_build_machine_use',
+        y='Count',
         color='Device_Type',
-        title='Device Type vs Build Type',
+        title='Device Type vs Build Type Count',
+        markers=True,
         labels={
-            'Device_Type': 'Device Type',
-            'u_build_machine_use': 'Build Type'
+            'u_build_machine_use': 'Build Type',
+            'Count': 'Count'
         }
     )
-    scatter_fig.update_traces(marker=dict(size=12))
-    scatter_chart = dbc.Card(
+    
+    line_chart = dbc.Card(
         [
-            dbc.CardHeader("Device Type vs Build Type"),
+            dbc.CardHeader("Device Type vs Build Type (Line Plot)"),
             dbc.CardBody(
-                dcc.Graph(figure=scatter_fig)
+                dcc.Graph(figure=line_fig)
             )
         ],
         className="mb-4"
@@ -130,7 +134,7 @@ def init_dataTbl(server):
         [
             html.H2("Mayenne Computer Asset Summary", className="mt-4 mb-4"),
             pie_chart,
-            scatter_chart,
+            line_chart,
             column_dropdown,
             main_table
         ],
