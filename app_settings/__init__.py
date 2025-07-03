@@ -21,8 +21,8 @@ def create_app():
     from app_modules.qr_gen import create_qr_code_app
     create_qr_code_app(app)
 
-    from app_modules.tensorflow_example import tflow
-    tflow(app)
+    from app_modules.ci_computer_v4 import init_dataTbl
+    init_dataTbl(app)
 
 
     return app
