@@ -206,7 +206,7 @@ def index():
 
 ### ```run.py```
 ```
-from app_settings import create_app # Import create_app method from app directory..
+from app_settings import create_app # Import create_app method from app directory.
 import os
 
 PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
