@@ -1,36 +1,32 @@
-# Flask and Web Development
+msal
 Flask
-Dash >=3.0.4
+dash>=3.0.4
 dash-bootstrap-components
 Flask-SQLAlchemy>=3.0.0
 Flask-Migrate>=4.0.0
+python-dotenv
 
-Flask-SQLAlchemy>=3.0.0
-Flask-Migrate>=4.0.0
-python-dotenv>=1.0.0
+# DB connectors
+psycopg2-binary>=2.9.0
+PyMySQL>=1.0.0
 
-# Database Connectors (Optional: Choose based on DB)
-psycopg2-binary>=2.9.0   # For PostgreSQL
-PyMySQL>=1.0.0           # For MySQL/MariaDB
-
-
-# Data Visualization
+# Data visualization
 matplotlib>=3.7.0
 seaborn>=0.12.0
 plotly>=5.15.0
 
-# Scientific Computing
+# Scientific computing
 numpy>=1.24.0
 scipy>=1.10.0
 pandas>=2.0.0
 scikit-learn>=1.3.0
 statsmodels>=0.14.0
 
-# Development Utilities
+# Dev tools
 ipython>=8.10.0
 jupyterlab>=4.0.0
 
-# Optional Extras
-openpyxl>=3.1.0           # Excel file reading/writing
+# Optional
+openpyxl>=3.1.0
 qrcode>=8.2
-tensorflow
+pyguacamole
