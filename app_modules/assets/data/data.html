@@ -1,0 +1,2810 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Shopping Cart</title>
+<meta name="description" content="Waveshare" />
+<meta name="keywords" content="Waveshare" />
+<meta name="robots" content="INDEX,FOLLOW" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+<link rel="icon" href="https://www.waveshare.com/media/favicon/default/f64.png" type="image/x-icon" />
+<link rel="shortcut icon" href="https://www.waveshare.com/media/favicon/default/f64.png" type="image/x-icon" />
+
+<link rel="apple-touch-icon-precomposed" href="https://www.waveshare.com/media/eternal/venedor/default/logo_1.png">
+
+<link rel="apple-touch-icon-precomposed" href="https://www.waveshare.com/media/eternal/venedor/default/logo_2.png">
+
+<link rel="apple-touch-icon-precomposed" href="https://www.waveshare.com/media/eternal/venedor/default/logo_3.png">
+
+<link rel="apple-touch-icon-precomposed" href="https://www.waveshare.com/media/eternal/venedor/default/f64.png">
+
+<!--[if lt IE 7]>
+<script type="text/javascript">
+//<![CDATA[
+    var BLANK_URL = 'https://www.waveshare.com/js/blank.html';
+    var BLANK_IMG = 'https://www.waveshare.com/js/spacer.gif';
+//]]>
+</script>
+<![endif]-->
+
+
+<script type="text/javascript" src="https://www.waveshare.com/js/eternal/jquery/jquery-1.8.2.min.js"></script>
+<script type="text/javascript">jQuery.noConflict();</script>
+
+        <script type="text/javascript" src="https://www.waveshare.com/js/eternal/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://www.waveshare.com/js/eternal/bootstrap/3.0.0/css/bootstrap.min.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="https://www.waveshare.com/js/eternal/bootstrap/3.0.0/css/bootstrap-theme.min.css" media="all" />
+    
+<link rel="stylesheet" type="text/css" href="https://www.waveshare.com/media/css_secure/293c454901ec3f3a51800ac5672cab3b.css" />
+<link rel="stylesheet" type="text/css" href="https://www.waveshare.com/media/css_secure/41394c8f34238e820460d19b0e4746e7.css" media="all" />
+<link rel="stylesheet" type="text/css" href="https://www.waveshare.com/media/css_secure/d5c134ba4492651131b79ba261d4814f.css" media="print" />
+<script type="text/javascript" src="https://www.waveshare.com/media/js/c3f51761163c7793c902541f70a3827d.js"></script>
+<!--[if IE]>
+<link rel="stylesheet" type="text/css" href="https://www.waveshare.com/media/css_secure/5da8afbecd5be32cffdd10a3e7403e32.css" media="all" />
+<![endif]-->
+<!--[if lt IE 7]>
+<script type="text/javascript" src="https://www.waveshare.com/media/js/52ba41bc47fba14dd32dfc47d89ea138.js"></script>
+<![endif]-->
+<!--[if lt IE 9]>
+<script type="text/javascript" src="https://www.waveshare.com/media/js/1bdc4a9c9fcd5a3b693af2890c4d829a.js"></script>
+<![endif]-->
+<!--[if lte IE 7]>
+<link rel="stylesheet" type="text/css" href="https://www.waveshare.com/media/css_secure/de6fa43e4fd0e992d77d9467e7e8ead5.css" media="all" />
+<![endif]-->
+<!--[if lte IE 8]>
+<link rel="stylesheet" type="text/css" href="https://www.waveshare.com/media/css_secure/60b9a421cce7c9738b817c13069f04e2.css" media="all" />
+<![endif]-->
+
+<script type="text/javascript">
+//<![CDATA[
+Mage.Cookies.path     = '/';
+Mage.Cookies.domain   = '.www.waveshare.com';
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+optionalZipCountries = ["HK","IE","MO","PA"];
+//]]>
+</script>
+<script type="text/javascript">//<![CDATA[
+        var Translator = new Translate([]);
+        //]]></script>
+<script type="text/javascript">
+    var VENEDOR_RESPONSIVE = true;
+</script>
+<script type="text/javascript">
+var SPAN_CSS = 'col-sm-';
+var VENEDOR_HEADER_FIXED = 0;
+var VENEDOR_HEADER_FIXED_LOGO = 0;
+var VENEDOR_HEADER_OFFSET = 0;
+var VENEDOR_MENU_PADDING = 12;
+</script>
+
+<script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=65c85865d77abd0019f02dc9&product=inline-share-buttons' async='async'></script>
+<style type="text/css">
+div#st-cmp-v2 {
+    display: none;
+}
+</style>
+</head>
+<body class=" checkout-cart-index 1column green bv3">
+
+
+    <div class="notices-container">
+                    <noscript>
+        <div class="global-site-notice noscript">
+            <div class="notice-inner">
+                <p>
+                    <strong>JavaScript seems to be disabled in your browser.</strong><br />
+                    You must have JavaScript enabled in your browser to utilize the functionality of this website.                </p>
+            </div>
+        </div>
+    </noscript>
+    </div>
+    <div class="header-container">
+        <div class="header-top">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="header-top-inner">
+                    <!--<div class="block block-currency">
+    <div class="block-title">
+        <span>Select Your Currency</span>
+    </div>
+    <div class="block-content dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="1000" data-close-others="false" title="Select Your Currency">
+            <span class="name">Euro</span><span class="symbol">€</span>
+        </a>
+        <ul class="dropdown-menu">
+                                                <li><a tabindex="-1" href="https://www.waveshare.com/directory/currency/switch/currency/AUD/uenc/aHR0cHM6Ly93d3cud2F2ZXNoYXJlLmNvbS9jaGVja291dC9jYXJ0Lw,,/"><span class="name">Australian Dollar</span><span class="symbol">AU$</span></a></li>
+                                                                <li><a tabindex="-1" href="https://www.waveshare.com/directory/currency/switch/currency/GBP/uenc/aHR0cHM6Ly93d3cud2F2ZXNoYXJlLmNvbS9jaGVja291dC9jYXJ0Lw,,/"><span class="name">British Pound Sterling</span><span class="symbol">£</span></a></li>
+                                                                <li><a tabindex="-1" href="https://www.waveshare.com/directory/currency/switch/currency/CAD/uenc/aHR0cHM6Ly93d3cud2F2ZXNoYXJlLmNvbS9jaGVja291dC9jYXJ0Lw,,/"><span class="name">Canadian Dollar</span><span class="symbol">CA$</span></a></li>
+                                                                                            <li><a tabindex="-1" href="https://www.waveshare.com/directory/currency/switch/currency/JPY/uenc/aHR0cHM6Ly93d3cud2F2ZXNoYXJlLmNvbS9jaGVja291dC9jYXJ0Lw,,/"><span class="name">Japanese Yen</span><span class="symbol">¥</span></a></li>
+                                                                <li><a tabindex="-1" href="https://www.waveshare.com/directory/currency/switch/currency/USD/uenc/aHR0cHM6Ly93d3cud2F2ZXNoYXJlLmNvbS9jaGVja291dC9jYXJ0Lw,,/"><span class="name">US Dollar</span><span class="symbol">$</span></a></li>
+                                        
+        </ul>
+    </div>
+</div>-->
+<div class="d-flex align-content-center">
+  <div class="btn-group waveshare-block-currency">
+      <button type="button" class="navbar-left dropdown-toggle d-flex align-content-center" data-toggle="dropdown">€<span class="currency-name hidden-xs"> Euro</span><span class="caret"></span></button>
+      <ul class="dropdown-menu" role="menu">
+                                          <li><a href="https://www.waveshare.com/directory/currency/switch/currency/AUD/uenc/aHR0cHM6Ly93d3cud2F2ZXNoYXJlLmNvbS9jaGVja291dC9jYXJ0Lw,,/"><span>AU$</span><span> Australian Dollar</span></a></li>
+                                                        <li><a href="https://www.waveshare.com/directory/currency/switch/currency/GBP/uenc/aHR0cHM6Ly93d3cud2F2ZXNoYXJlLmNvbS9jaGVja291dC9jYXJ0Lw,,/"><span>£</span><span> British Pound Sterling</span></a></li>
+                                                        <li><a href="https://www.waveshare.com/directory/currency/switch/currency/CAD/uenc/aHR0cHM6Ly93d3cud2F2ZXNoYXJlLmNvbS9jaGVja291dC9jYXJ0Lw,,/"><span>CA$</span><span> Canadian Dollar</span></a></li>
+                                                                                <li><a href="https://www.waveshare.com/directory/currency/switch/currency/JPY/uenc/aHR0cHM6Ly93d3cud2F2ZXNoYXJlLmNvbS9jaGVja291dC9jYXJ0Lw,,/"><span>¥</span><span> Japanese Yen</span></a></li>
+                                                        <li><a href="https://www.waveshare.com/directory/currency/switch/currency/USD/uenc/aHR0cHM6Ly93d3cud2F2ZXNoYXJlLmNvbS9jaGVja291dC9jYXJ0Lw,,/"><span>$</span><span> US Dollar</span></a></li>
+                              </ul>
+  </div>
+  <div class="toplinks d-flex align-content-center"><a class="navbar-texthidden-xs" href="https://service.waveshare.com"><span class="d-flex align-content-center"><i class="icon-waveshare-supp"></i><span class="hidden-xs">SUPPORT</span></span></a></div>
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+jQuery(function($) {
+    var venedor_currency_timer;
+    
+    function venedor_resize_currency() {
+        var w1 = $('.block-currency .dropdown-toggle').css('width','auto').innerWidth() + 1;
+        var w2 = $('.block-currency .dropdown-menu').css('width','auto').innerWidth() + 1;
+        if (w1 > w2) {
+            $('.block-currency .dropdown-toggle').css('width', w1 + 'px');
+            $('.block-currency .dropdown-menu').css('width', w1 + 'px');
+        } else {
+            $('.block-currency .dropdown-toggle').css('width', w2 + 'px');
+            $('.block-currency .dropdown-menu').css('width', w2 + 'px');
+        }
+        if (venedor_currency_timer) clearTimeout(venedor_currency_timer); 
+    }
+    
+    $(window).resize(function() {
+        clearTimeout(venedor_currency_timer); 
+        venedor_currency_timer = setTimeout(venedor_resize_currency, 100); 
+    });
+    venedor_resize_currency();
+});
+//]]>
+</script>
+                        
+
+<!--<ul class="toplinks links">
+            
+			            <li class=" last" ><a href="https://www.waveshare.com/onepagecheckout/" title="Checkout" class="top-link-checkout"><i class="icon-checkout"></i><span>Checkout</span></a></li>
+                    
+			            <li  ><a href="https://www.waveshare.com/checkout/cart/" title="My Cart (6 items)" class="top-link-cart"><i class="icon-mycart"></i><span>My Cart <span class="count">(6)</span></span></a></li>
+                                                    
+			            <li class="first" ><a href="https://www.waveshare.com/customer/account/" title="My Account" ><i class="icon-myaccount"></i><span>My Account</span></a></li>
+            </ul>-->
+
+
+<ul class="toplinks links d-flex align-content-center">
+                        <li><a href="https://www.waveshare.com/onepagecheckout/" title="Checkout" class="top-link-checkout d-flex align-content-center"><i class="icon-checkout"></i><span class="hidden-xs">Checkout</span></a></li>
+            <li style="opacity: 0.5;">|</li>
+                                <li><a href="https://www.waveshare.com/checkout/cart/" title="My Cart (6 items)" class="top-link-cart d-flex align-content-center"><i class="icon-mycart"></i><span class="hidden-xs">My Cart <span class="count">(6)</span></span></a></li>
+            <li style="opacity: 0.5;">|</li>
+                                        <!-- 未登录 -->
+                  <li class="dropdown ws-account-drop">
+              <a class="dropdown-toggle d-flex align-content-center" data-toggle="dropdown" href="/customer/account/">
+                  <i class="icon-myaccount"></i><span class="hidden-xs">Welcome, </span><span name="username">AL Numan Abdullah </span><span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu ws-logmenu">
+                  <li><a style="margin: 0;" href="/customer/account/">My Account</a></li>
+                  <li><a style="border: none;margin: 0;" href="/customer/account/logout">Logout</a></li>
+              </ul>
+          </li>
+        </ul>
+
+<script type="text/javascript">
+  // 购物车数量有变化会更新这个block，即会重新加载
+  var cartQty = 6 * 1;
+  jQuery(document).ready(function($) {
+    if (cartQty >= 1) {
+      $('.header-container .waveshare_cart_num').text(cartQty);
+      $('#waveshare-mini-cart2 .count').text(cartQty);
+    } else {
+      $('.header-container .waveshare_cart_num').text('');
+      $('#waveshare-mini-cart2 .count').text('');
+    }
+  })
+</script>                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="header">
+    <div class="container">
+        <div class="header-center">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="header-inner d-flex align-content-center">
+                        <h1 class="logo">
+                            <strong>Waveshare</strong>
+                            <a href="https://www.waveshare.com/" title="Waveshare" class="logo"><img src="https://www.waveshare.com/media/eternal/venedor/default/logo.png" alt="Waveshare"></a>
+                        </h1>
+                        <div class="hidden-xs form-search">
+                            <form id="waveshare-search1" class="waveshare-search1 d-flex justify-content-between align-content-center" role="search" action="https://www.waveshare.com/catalogsearch/result/" method="get">                         
+  <div class="input-group-btn">
+      <input type="text" placeholder="Search" class="form-control dropdown-toggle" data-toggle="dropdown" name="q" autocomplete="off"> <!-- value="" -->
+      <ul class="dropdown-menu waveshare-search-list" style="width: 100%;">
+      </ul>
+  </div>
+  <button type="submit" title="Search" class="button">Search</button>
+</form><span class="waveshare_cart_num" style="display:none;">6</span>
+
+<script type="text/javascript">
+//<![CDATA[
+jQuery(function($) {
+    var form_mini_timer;
+    var search_input_width = 160;
+    var input_val = "";
+
+    // add by 20240508
+    $('#waveshare-search1 input').unbind('focus').focus(function(){
+      searchKeyUp();
+    })
+    $('#waveshare-search1 input').unbind('keyup').keyup(function(){
+      searchKeyUp();
+    })
+    function searchKeyUp() {
+      input_val1 = $.trim($('#waveshare-search1 input').val());
+      console.log(input_val);
+      if(input_val1=='') {
+        $('#waveshare-search1 .waveshare-search-list').html('<li><a href="/catalogsearch/advanced/"><div><i class="icon-advanced"></i>Advanced Search</div></a></li>')
+      } else {
+        if(input_val1 != input_val) {
+          input_val = input_val1;
+          $.get("/catalogsearch/ajax/suggest/?v=2&q="+input_val, function(data,status){
+            if(status='success') {
+              $('#waveshare-search1 .waveshare-search-list').html(data)
+            }
+          });
+        }
+        // <li><a href="#"><div><i class="icon-search"></i><span>匹配结果</span></div><div>86815</div></a></li>
+      }
+    }
+
+})
+//]]>
+</script>
+                        </div>
+                        <div class="hidden-xs">
+                          
+<!-- waveshare-mini-cart1 -->
+<div id="mini-cart" class="waveshare-mini-cart block-content dropdown">
+  <div class="dropdown-toggle d-flex align-content-center" data-toggle="dropdown" data-hover="dropdown" data-delay="1000" data-close-others="false" title="You have no items in your shopping cart.">
+        <i class="icon-cart2"></i>
+        <span class="cart-items">6 item(s)</span>
+        <span class="mobile-hide"> - <span class="empty"><span class="price"><span class="price">€85.48</span></span></span></span>
+    </div>
+                <div class="dropdown-menu">
+            <div class="block-content">
+                <div class="block-subtitle">Recently added item(s)</div>
+                <ol class="mini-products-list clearer">
+                                    <li class="item clearfix">
+            <a href="https://www.waveshare.com/hdmi-adapter-vertical.htm?sku=23134" title="DIY HDMI Cable: Micro HDMI Adapter Vertical" class="product-image">
+            <img src="https://www.waveshare.com/media/catalog/product/cache/1/thumbnail/100x100/9df78eab33525d08d6e5fb8d27136e95/m/i/micro-hdmi-adapter-vertical-1.jpg" alt="DIY HDMI Cable: Micro HDMI Adapter Vertical" />
+        </a>
+        <div class="product-details">
+        <a href="https://www.waveshare.com/checkout/cart/delete/id/1260260/uenc/aHR0cHM6Ly93d3cud2F2ZXNoYXJlLmNvbS9jaGVja291dC9jYXJ0Lw,,/" title="Remove This Item" data-ajax="0" onclick="if (confirm('Are you sure you would like to remove this item from the shopping cart?')) { jQuery(this).attr('data-ajax', 1); return true; } return false;" class="btn-remove">Remove This Item</a>
+                <p class="product-name">
+                            <a href="https://www.waveshare.com/hdmi-adapter-vertical.htm?sku=23134">
+            DIY HDMI Cable: Micro HDMI Adapter Vertical                            </a>
+                    </p>
+        1 x
+
+    
+                                <span class="price">€2.54</span>                    
+
+
+    
+    
+            </div>
+</li>
+                                    <li class="item clearfix">
+            <a href="https://www.waveshare.com/ffc-20pin-0.5pitch-0.5m-opposite-side-contact.htm" title="DIY HDMI Cable: 0.5m FFC" class="product-image">
+            <img src="https://www.waveshare.com/media/catalog/product/cache/1/thumbnail/100x100/9df78eab33525d08d6e5fb8d27136e95/f/f/ffc-20pin-0.5pitch-0.5m-opposite-side-contact.jpg" alt="DIY HDMI Cable: 0.5m FFC" />
+        </a>
+        <div class="product-details">
+        <a href="https://www.waveshare.com/checkout/cart/delete/id/1260259/uenc/aHR0cHM6Ly93d3cud2F2ZXNoYXJlLmNvbS9jaGVja291dC9jYXJ0Lw,,/" title="Remove This Item" data-ajax="0" onclick="if (confirm('Are you sure you would like to remove this item from the shopping cart?')) { jQuery(this).attr('data-ajax', 1); return true; } return false;" class="btn-remove">Remove This Item</a>
+                <a href="https://www.waveshare.com/checkout/cart/configure/id/1260259/" title="Edit item" class="btn-edit">Edit item</a>
+                <p class="product-name">
+                            <a href="https://www.waveshare.com/ffc-20pin-0.5pitch-0.5m-opposite-side-contact.htm">
+            DIY HDMI Cable: 0.5m FFC                            </a>
+                    </p>
+        1 x
+
+    
+                                <span class="price">€1.01</span>                    
+
+
+    
+    
+            </div>
+</li>
+                                    <li class="item clearfix">
+            <a href="https://www.waveshare.com/10.1-dsi-touch-a.htm" title="10.1inch DSI Capacitive Touch Display, 800×1280, IPS Panel, Optical Bonding Toughened Glass Panel, 10-Point Touch" class="product-image">
+            <img src="https://www.waveshare.com/media/catalog/product/cache/1/thumbnail/100x100/9df78eab33525d08d6e5fb8d27136e95/1/0/10.1-dsi-touch-a-1.jpg" alt="10.1inch DSI Capacitive Touch Display, 800×1280, IPS Panel, Optical Bonding Toughened Glass Panel, 10-Point Touch" />
+        </a>
+        <div class="product-details">
+        <a href="https://www.waveshare.com/checkout/cart/delete/id/1260255/uenc/aHR0cHM6Ly93d3cud2F2ZXNoYXJlLmNvbS9jaGVja291dC9jYXJ0Lw,,/" title="Remove This Item" data-ajax="0" onclick="if (confirm('Are you sure you would like to remove this item from the shopping cart?')) { jQuery(this).attr('data-ajax', 1); return true; } return false;" class="btn-remove">Remove This Item</a>
+                <a href="https://www.waveshare.com/checkout/cart/configure/id/1260255/" title="Edit item" class="btn-edit">Edit item</a>
+                <p class="product-name">
+                            <a href="https://www.waveshare.com/10.1-dsi-touch-a.htm">
+            10.1inch DSI Capacitive Touch Display, 800×1280, IPS Panel, Optical Bonding Toughened Glass Panel, 10-Point Touch                            </a>
+                    </p>
+        1 x
+
+    
+                                <span class="price">€50.95</span>                    
+
+
+    
+    
+            </div>
+</li>
+                                </ol>
+                <script type="text/javascript">decorateList('cart-sidebar', 'none-recursive')</script>
+                
+                <div class="actions-wrap clearfix">
+                    <div class="actions clearfix">
+                        <button type="button" title="View all items in your shopping cart" class="button button-inverse btn-inline" onclick="setLocation('https://www.waveshare.com/checkout/cart/')"><span><span>Cart</span></span></button>
+                                                    <button type="button" title="Proceed to Checkout" class="button btn-checkout btn-inline " onclick="setLocation('https://www.waveshare.com/onepagecheckout/')"><span><span>Checkout</span></span></button>
+                                                                        </div>
+                    <div class="prices-wrap">
+                                                <div class="prices">
+                            <span class="price-label">Total: </span>
+                                                                                                <span class="price">€85.48</span>                                                                                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script type="text/javascript">
+    jQuery('#mini-cart').unbind('click').click(function(){
+        location.href = "/checkout/cart/";
+        return false;
+    })
+</script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="header-bottom">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <nav class="navbar navbar-default" role="navigation">
+                    <div class="container-fluid"> 
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle waveshare-navbar-toggle" data-toggle="collapse"
+                                    data-target="#ws-navbar-collapse">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-waveshare-menu"></span>
+                            </button>
+                            <div class="visible-xs">
+                                <div class="d-flex justify-content-between align-content-center form-search">
+                                    <form id="waveshare-search2" class="waveshare-search1 d-flex justify-content-between align-content-center" role="search" action="https://www.waveshare.com/catalogsearch/result/" method="get">
+                                        <div class="input-group-btn">
+                                            <input type="text" placeholder="Search" class="form-control" autocomplete="off" name="q">
+                                        </div>
+                                        <button type="submit" title="Search" class="button">Search</button>
+                                    </form>
+                                    <div id="waveshare-mini-cart2">
+                                        <a href="/checkout/cart/" class="d-flex align-content-center justify-content-center"><i class="icon-mycart-white"></i><span class="count badge">6</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="collapse navbar-collapse navbar-left notin" id="ws-navbar-collapse">
+                          
+<ul class="nav navbar-nav">
+  <li class="moveto-last">
+      <a id="ws-show-products" href="/product.htm" class="d-flex align-content-center"><i class="icon-menu "></i><span>PRODUCTS</span></a>
+      <div id="ws-sidebar-home-top" class="waveshare-sidebar-home-top">
+          <nav class="amazonmenu">
+            <ul>
+            <li class="level0 nav-1 first last parent">
+<a href="https://www.waveshare.com/product.htm">
+<span>Products</span>
+</a>
+<ul class="level0">
+<li class="level1 nav-1-1 first parent">
+<a href="https://www.waveshare.com/product/raspberry-pi.htm">
+<span>Raspberry Pi</span>
+</a>
+<ul class="level1">
+<li class="level2 nav-1-1-1 first parent">
+<a href="https://www.waveshare.com/product/raspberry-pi/boards-kits.htm">
+<span>Boards / Kits</span>
+</a>
+<ul class="level2">
+<li class="level3 nav-1-1-1-1 first">
+<a href="https://www.waveshare.com/product/raspberry-pi/boards-kits/raspberry-pi-5.htm">
+<span>Raspberry Pi 5</span>
+</a>
+</li><li class="level3 nav-1-1-1-2">
+<a href="https://www.waveshare.com/product/raspberry-pi/boards-kits/raspberry-pi-4.htm">
+<span>Raspberry Pi 4</span>
+</a>
+</li><li class="level3 nav-1-1-1-3">
+<a href="https://www.waveshare.com/product/raspberry-pi/boards-kits/raspberry-pi-3.htm">
+<span>Raspberry Pi 3</span>
+</a>
+</li><li class="level3 nav-1-1-1-4">
+<a href="https://www.waveshare.com/product/raspberry-pi/boards-kits/raspberry-pi-400.htm">
+<span>Raspberry Pi 400</span>
+</a>
+</li><li class="level3 nav-1-1-1-5">
+<a href="https://www.waveshare.com/product/raspberry-pi/boards-kits/raspberry-pi-zero-2-w-cat.htm">
+<span>Raspberry Pi Zero 2 W</span>
+</a>
+</li><li class="level3 nav-1-1-1-6">
+<a href="https://www.waveshare.com/product/raspberry-pi/boards-kits/raspberry-pi-zero.htm">
+<span>Raspberry Pi Zero</span>
+</a>
+</li><li class="level3 nav-1-1-1-7">
+<a href="https://www.waveshare.com/product/raspberry-pi/boards-kits/raspberry-pi-pico-cat.htm">
+<span>Raspberry Pi Pico</span>
+</a>
+</li><li class="level3 nav-1-1-1-8">
+<a href="https://www.waveshare.com/product/raspberry-pi/boards-kits/compute-module-4-4s-cat.htm">
+<span>Compute Module 4/4S</span>
+</a>
+</li><li class="level3 nav-1-1-1-9">
+<a href="https://www.waveshare.com/product/raspberry-pi/boards-kits/compute-module.htm">
+<span>Compute Module 3</span>
+</a>
+</li><li class="level3 nav-1-1-1-10">
+<a href="https://www.waveshare.com/product/raspberry-pi/boards-kits/raspberry-pi-pico-3.htm">
+<span>Raspberry Pi Pico 2</span>
+</a>
+</li><li class="level3 nav-1-1-1-11">
+<a href="https://www.waveshare.com/product/raspberry-pi/boards-kits/cm5.htm">
+<span>Compute Module 5</span>
+</a>
+</li><li class="level3 nav-1-1-1-12 last">
+<a href="https://www.waveshare.com/product/raspberry-pi/boards-kits/raspberry-pi-500-and-kits.htm">
+<span>Raspberry Pi 500</span>
+</a>
+</li>
+</ul>
+</li><li class="level2 nav-1-1-2 parent">
+<a href="https://www.waveshare.com/product/raspberry-pi/displays.htm">
+<span>Displays</span>
+</a>
+<ul class="level2">
+<li class="level3 nav-1-1-2-13 first">
+<a href="https://www.waveshare.com/product/raspberry-pi/displays/lcd-oled.htm">
+<span>LCD</span>
+</a>
+</li><li class="level3 nav-1-1-2-14">
+<a href="https://www.waveshare.com/product/raspberry-pi/displays/oled.htm">
+<span>OLED</span>
+</a>
+</li><li class="level3 nav-1-1-2-15 last">
+<a href="https://www.waveshare.com/product/raspberry-pi/displays/e-paper.htm">
+<span>e-Paper</span>
+</a>
+</li>
+</ul>
+</li><li class="level2 nav-1-1-3 parent">
+<a href="https://www.waveshare.com/product/raspberry-pi/cameras.htm">
+<span>Cameras</span>
+</a>
+<ul class="level2">
+<li class="level3 nav-1-1-3-16 first">
+<a href="https://www.waveshare.com/product/raspberry-pi/cameras/10mp-pixels.htm">
+<span>≥10MP Rolling Shutter</span>
+</a>
+</li><li class="level3 nav-1-1-3-17">
+<a href="https://www.waveshare.com/product/raspberry-pi/cameras/8m-pixels.htm">
+<span>8MP Rolling Shutter</span>
+</a>
+</li><li class="level3 nav-1-1-3-18">
+<a href="https://www.waveshare.com/product/raspberry-pi/cameras/5m-pixels.htm">
+<span>5MP Rolling Shutter</span>
+</a>
+</li><li class="level3 nav-1-1-3-19">
+<a href="https://www.waveshare.com/product/raspberry-pi/cameras/1mp-camera-global-shutter.htm">
+<span>1MP Global Shutter</span>
+</a>
+</li><li class="level3 nav-1-1-3-20">
+<a href="https://www.waveshare.com/product/raspberry-pi/cameras/ai-cameras.htm">
+<span>AI Cameras</span>
+</a>
+</li><li class="level3 nav-1-1-3-21 last">
+<a href="https://www.waveshare.com/product/raspberry-pi/cameras/2m-pixels.htm">
+<span>2MP Rolling Shutter</span>
+</a>
+</li>
+</ul>
+</li><li class="level2 nav-1-1-4 parent">
+<a href="https://www.waveshare.com/product/raspberry-pi/hats.htm">
+<span>HATs</span>
+</a>
+<ul class="level2">
+<li class="level3 nav-1-1-4-22 first">
+<a href="https://www.waveshare.com/product/raspberry-pi/hats/iot.htm">
+<span>IoT</span>
+</a>
+</li><li class="level3 nav-1-1-4-23">
+<a href="https://www.waveshare.com/product/raspberry-pi/hats/interface-power.htm">
+<span>Interface / Expansion / Power</span>
+</a>
+</li><li class="level3 nav-1-1-4-24">
+<a href="https://www.waveshare.com/product/raspberry-pi/hats/motors-relays.htm">
+<span>Motors / Relays / SCR</span>
+</a>
+</li><li class="level3 nav-1-1-4-25">
+<a href="https://www.waveshare.com/product/raspberry-pi/hats/ad-da-audio-sensors.htm">
+<span>AD / DA / Audio / Sensors</span>
+</a>
+</li><li class="level3 nav-1-1-4-26">
+<a href="https://www.waveshare.com/product/raspberry-pi/hats/led-buttons.htm">
+<span>LED / Buttons</span>
+</a>
+</li><li class="level3 nav-1-1-4-27 last">
+<a href="https://www.waveshare.com/product/raspberry-pi/hats/versatile.htm">
+<span>Versatile</span>
+</a>
+</li>
+</ul>
+</li><li class="level2 nav-1-1-5 parent">
+<a href="https://www.waveshare.com/product/raspberry-pi/laptop.htm">
+<span>All-in-one</span>
+</a>
+<ul class="level2">
+<li class="level3 nav-1-1-5-28 first last">
+<a href="https://www.waveshare.com/product/raspberry-pi/laptop/all-in-one.htm">
+<span>Magic Mirror / All-in-one</span>
+</a>
+</li>
+</ul>
+</li><li class="level2 nav-1-1-6 parent">
+<a href="https://www.waveshare.com/product/raspberry-pi/robots.htm">
+<span>Robots</span>
+</a>
+<ul class="level2">
+<li class="level3 nav-1-1-6-29 first">
+<a href="https://www.waveshare.com/product/raspberry-pi/robots/mobile-robots.htm">
+<span>Mobile Robots</span>
+</a>
+</li><li class="level3 nav-1-1-6-30 last">
+<a href="https://www.waveshare.com/product/raspberry-pi/robots/robot-arm-control.htm">
+<span>Robot Arm / Control</span>
+</a>
+</li>
+</ul>
+</li><li class="level2 nav-1-1-7">
+<a href="https://www.waveshare.com/product/raspberry-pi/portable-gaming.htm">
+<span>Portable Gaming</span>
+</a>
+</li><li class="level2 nav-1-1-8 last parent">
+<a href="https://www.waveshare.com/product/raspberry-pi/accessories.htm">
+<span>Accessories</span>
+</a>
+<ul class="level2">
+<li class="level3 nav-1-1-8-31 first">
+<a href="https://www.waveshare.com/product/raspberry-pi/accessories/pi-cases.htm">
+<span>Pi Cases</span>
+</a>
+</li><li class="level3 nav-1-1-8-32">
+<a href="https://www.waveshare.com/product/raspberry-pi/accessories/display-cases.htm">
+<span>Display Cases</span>
+</a>
+</li><li class="level3 nav-1-1-8-33 last">
+<a href="https://www.waveshare.com/product/raspberry-pi/accessories/wires-power-sd-card.htm">
+<span>Wires / Power / SD Card...</span>
+</a>
+</li>
+</ul>
+</li>
+</ul>
+</li><li class="level1 nav-1-2 parent">
+<a href="https://www.waveshare.com/product/ai.htm">
+<span>AI</span>
+</a>
+<ul class="level1">
+<li class="level2 nav-1-2-9 first parent">
+<a href="https://www.waveshare.com/product/ai/boards-kits.htm">
+<span>Boards / Kits</span>
+</a>
+<ul class="level2">
+<li class="level3 nav-1-2-9-34 first">
+<a href="https://www.waveshare.com/product/ai/boards-kits/jetson-nano.htm">
+<span>Jetson Nano</span>
+</a>
+</li><li class="level3 nav-1-2-9-35">
+<a href="https://www.waveshare.com/product/ai/boards-kits/jetson-tx2.htm">
+<span>Jetson TX2</span>
+</a>
+</li><li class="level3 nav-1-2-9-36">
+<a href="https://www.waveshare.com/product/ai/boards-kits/jetson-xavier-nx-cata.htm">
+<span>Jetson Xavier NX</span>
+</a>
+</li><li class="level3 nav-1-2-9-37">
+<a href="https://www.waveshare.com/product/ai/boards-kits/jetson-orin.htm">
+<span>Jetson Orin</span>
+</a>
+</li><li class="level3 nav-1-2-9-38">
+<a href="https://www.waveshare.com/product/ai/boards-kits/ai-cameras.htm">
+<span>AI Cameras</span>
+</a>
+</li><li class="level3 nav-1-2-9-39">
+<a href="https://www.waveshare.com/product/ai/boards-kits/ops-computer.htm">
+<span>OPS Computer</span>
+</a>
+</li><li class="level3 nav-1-2-9-40">
+<a href="https://www.waveshare.com/product/ai/boards-kits/raspberry-pi.htm">
+<span>Raspberry Pi</span>
+</a>
+</li><li class="level3 nav-1-2-9-41">
+<a href="https://www.waveshare.com/product/ai/boards-kits/d-robotics.htm">
+<span>D-Robotics</span>
+</a>
+</li><li class="level3 nav-1-2-9-42 last">
+<a href="https://www.waveshare.com/product/ai/boards-kits/luckfox.htm">
+<span>Luckfox</span>
+</a>
+</li>
+</ul>
+</li><li class="level2 nav-1-2-10 parent">
+<a href="https://www.waveshare.com/product/ai/displays.htm">
+<span>Displays</span>
+</a>
+<ul class="level2">
+<li class="level3 nav-1-2-10-43 first">
+<a href="https://www.waveshare.com/product/ai/displays/lcd-oled.htm">
+<span>LCD</span>
+</a>
+</li><li class="level3 nav-1-2-10-44">
+<a href="https://www.waveshare.com/product/ai/displays/oled.htm">
+<span>OLED</span>
+</a>
+</li><li class="level3 nav-1-2-10-45 last">
+<a href="https://www.waveshare.com/product/ai/displays/e-paper.htm">
+<span>e-Paper</span>
+</a>
+</li>
+</ul>
+</li><li class="level2 nav-1-2-11 parent">
+<a href="https://www.waveshare.com/product/ai/cameras.htm">
+<span>Cameras</span>
+</a>
+<ul class="level2">
+<li class="level3 nav-1-2-11-46 first">
+<a href="https://www.waveshare.com/product/ai/cameras/single-cameras.htm">
+<span>Single Cameras</span>
+</a>
+</li><li class="level3 nav-1-2-11-47">
+<a href="https://www.waveshare.com/product/ai/cameras/binocular-cameras.htm">
+<span>Binocular Cameras</span>
+</a>
+</li><li class="level3 nav-1-2-11-48 last">
+<a href="https://www.waveshare.com/product/ai/cameras/others.htm">
+<span>Others</span>
+</a>
+</li>
+</ul>
+</li><li class="level2 nav-1-2-12 parent">
+<a href="https://www.waveshare.com/product/ai/expansions.htm">
+<span>Expansions</span>
+</a>
+<ul class="level2">
+<li class="level3 nav-1-2-12-49 first">
+<a href="https://www.waveshare.com/product/ai/expansions/iot.htm">
+<span>IoT</span>
+</a>
+</li><li class="level3 nav-1-2-12-50">
+<a href="https://www.waveshare.com/product/ai/expansions/motors-relays.htm">
+<span>Motors / Relays / SCR</span>
+</a>
+</li><li class="level3 nav-1-2-12-51">
+<a href="https://www.waveshare.com/product/ai/expansions/ad-da-versatile.htm">
+<span>AD / DA / Versatile</span>
+</a>
+</li><li class="level3 nav-1-2-12-52 last">
+<a href="https://www.waveshare.com/product/ai/expansions/power-supply.htm">
+<span>Power Supply</span>
+</a>
+</li>
+</ul>
+</li><li class="level2 nav-1-2-13 parent">
+<a href="https://www.waveshare.com/product/ai/robots.htm">
+<span>Robots</span>
+</a>
+<ul class="level2">
+<li class="level3 nav-1-2-13-53 first">
+<a href="https://www.waveshare.com/product/ai/robots/mobile-robots.htm">
+<span>Mobile Robots</span>
+</a>
+</li><li class="level3 nav-1-2-13-54 last">
+<a href="https://www.waveshare.com/product/ai/robots/robot-arm-control.htm">
+<span>Robot Arm / Control</span>
+</a>
+</li>
+</ul>
+</li><li class="level2 nav-1-2-14 last parent">
+<a href="https://www.waveshare.com/product/ai/accessories.htm">
+<span>Accessories</span>
+</a>
+<ul class="level2">
+<li class="level3 nav-1-2-14-55 first">
+<a href="https://www.waveshare.com/product/ai/accessories/cases.htm">
+<span>Cases</span>
+</a>
+</li><li class="level3 nav-1-2-14-56 last">
+<a href="https://www.waveshare.com/product/ai/accessories/wires-power-sd-card.htm">
+<span>Wires / Power / SD Card...</span>
+</a>
+</li>
+</ul>
+</li>
+</ul>
+</li><li class="level1 nav-1-3 parent">
+<a href="https://www.waveshare.com/product/risc-v.htm">
+<span>RISC-V</span>
+</a>
+<ul class="level1">
+<li class="level2 nav-1-3-15 first parent">
+<a href="https://www.waveshare.com/product/risc-v/boards-kits.htm">
+<span>Boards / Kits</span>
+</a>
+<ul class="level2">
+<li class="level3 nav-1-3-15-57 first last">
+<a href="https://www.waveshare.com/product/risc-v/boards-kits/visionfive2.htm">
+<span>VisionFive2</span>
+</a>
+</li>
+</ul>
+</li><li class="level2 nav-1-3-16 parent">
+<a href="https://www.waveshare.com/product/risc-v/displays.htm">
+<span>Displays</span>
+</a>
+<ul class="level2">
+<li class="level3 nav-1-3-16-58 first last">
+<a href="https://www.waveshare.com/product/risc-v/displays/lcd.htm">
+<span>LCD</span>
+</a>
+</li>
+</ul>
+</li><li class="level2 nav-1-3-17 parent">
+<a href="https://www.waveshare.com/product/risc-v/expansions-accessories.htm">
+<span>Expansions / Accessories</span>
+</a>
+<ul class="level2">
+<li class="level3 nav-1-3-17-59 first">
+<a href="https://www.waveshare.com/product/risc-v/expansions-accessories/audio-sensors.htm">
+<span>Audio / Sensors</span>
+</a>
+</li><li class="level3 nav-1-3-17-60">
+<a href="https://www.waveshare.com/product/risc-v/expansions-accessories/relays-motors-servos.htm">
+<span>Relays / Motors / Servos</span>
+</a>
+</li><li class="level3 nav-1-3-17-61 last">
+<a href="https://www.waveshare.com/product/risc-v/expansions-accessories/cooling-fan.htm">
+<span>Cooling Fan</span>
+</a>
+</li>
+</ul>
+</li><li class="level2 nav-1-3-18 last parent">
+<a href="https://www.waveshare.com/product/risc-v/cameras.htm">
+<span>Cameras</span>
+</a>
+<ul class="level2">
+<li class="level3 nav-1-3-18-62 first last">
+<a href="https://www.waveshare.com/product/risc-v/cameras/8mp-imx219-cameras.htm">
+<span>8MP IMX219 Cameras</span>
+</a>
+</li>
+</ul>
+</li>
+</ul>
+</li><li class="level1 nav-1-4 parent">
+<a href="https://www.waveshare.com/product/luckfox.htm">
+<span>Luckfox</span>
+</a>
+<ul class="level1">
+<li class="level2 nav-1-4-19 first parent">
+<a href="https://www.waveshare.com/product/luckfox/boards-modules.htm">
+<span>Linux Boards / Modules</span>
+</a>
+<ul class="level2">
+<li class="level3 nav-1-4-19-63 first">
+<a href="https://www.waveshare.com/product/luckfox/boards-modules/core3566-2.htm">
+<span>Core3566-RK3566</span>
+</a>
+</li><li class="level3 nav-1-4-19-64">
+<a href="https://www.waveshare.com/product/luckfox/boards-modules/luckfox-pico-core1106.htm">
+<span>LuckFox Pico-RV1106</span>
+</a>
+</li><li class="level3 nav-1-4-19-65">
+<a href="https://www.waveshare.com/product/luckfox/boards-modules/core3576.htm">
+<span>Omni3576-RK3576</span>
+</a>
+</li><li class="level3 nav-1-4-19-66">
+<a href="https://www.waveshare.com/product/luckfox/boards-modules/luckfox-lyra-2.htm">
+<span>Luckfox Lyra-RK3506</span>
+</a>
+</li><li class="level3 nav-1-4-19-67 last">
+<a href="https://www.waveshare.com/product/luckfox/boards-modules/luckfox-nova-rk3308.htm">
+<span>Luckfox Nova-RK3308</span>
+</a>
+</li>
+</ul>
+</li><li class="level2 nav-1-4-20 parent">
+<a href="https://www.waveshare.com/product/luckfox/displays.htm">
+<span>Displays</span>
+</a>
+<ul class="level2">
+<li class="level3 nav-1-4-20-68 first last">
+<a href="https://www.waveshare.com/product/luckfox/displays/lcd-oled.htm">
+<span>LCD/OLED</span>
+</a>
+</li>
+</ul>
+</li><li class="level2 nav-1-4-21 last parent">
+<a href="https://www.waveshare.com/product/luckfox/cameras.htm">
+<span>Cameras</span>
+</a>
+<ul class="level2">
+<li class="level3 nav-1-4-21-69 first">
+<a href="https://www.waveshare.com/product/luckfox/cameras/3mp-cameras.htm">
+<span>3MP Cameras</span>
+</a>
+</li><li class="level3 nav-1-4-21-70">
+<a href="https://www.waveshare.com/product/luckfox/cameras/8mp-cameras.htm">
+<span>8MP Cameras</span>
+</a>
+</li><li class="level3 nav-1-4-21-71 last">
+<a href="https://www.waveshare.com/product/luckfox/cameras/5mp-cameras.htm">
+<span>5MP Cameras</span>
+</a>
+</li>
+</ul>
+</li>
+</ul>
+</li><li class="level1 nav-1-5 parent">
+<a href="https://www.waveshare.com/product/displays.htm">
+<span>Displays</span>
+</a>
+<ul class="level1">
+<li class="level2 nav-1-5-22 first parent">
+<a href="https://www.waveshare.com/product/displays/lcd-oled.htm">
+<span>LCD</span>
+</a>
+<ul class="level2">
+<li class="level3 nav-1-5-22-72 first">
+<a href="https://www.waveshare.com/product/displays/lcd-oled/lcd-oled-1.htm">
+<span>5″  - 24.5″</span>
+</a>
+</li><li class="level3 nav-1-5-22-73">
+<a href="https://www.waveshare.com/product/displays/lcd-oled/lcd-oled-2.htm">
+<span>2.8″  - 4.3″</span>
+</a>
+</li><li class="level3 nav-1-5-22-74 last">
+<a href="https://www.waveshare.com/product/displays/lcd-oled/lcd-oled-3.htm">
+<span>0.71″  - 2.4″</span>
+</a>
+</li>
+</ul>
+</li><li class="level2 nav-1-5-23 parent">
+<a href="https://www.waveshare.com/product/displays/oled.htm">
+<span>OLED</span>
+</a>
+<ul class="level2">
+<li class="level3 nav-1-5-23-75 first">
+<a href="https://www.waveshare.com/product/displays/oled/oled-1.htm">
+<span>5″  - 15.6″</span>
+</a>
+</li><li class="level3 nav-1-5-23-76 last">
+<a href="https://www.waveshare.com/product/displays/oled/oled-3.htm">
+<span>0.49″  - 2.4″</span>
+</a>
+</li>
+</ul>
+</li><li class="level2 nav-1-5-24 parent">
+<a href="https://www.waveshare.com/product/displays/e-paper.htm">
+<span>e-Paper</span>
+</a>
+<ul class="level2">
+<li class="level3 nav-1-5-24-77 first">
+<a href="https://www.waveshare.com/product/displays/e-paper/epaper-1.htm">
+<span>5.65″  - 13.3″</span>
+</a>
+</li><li class="level3 nav-1-5-24-78">
+<a href="https://www.waveshare.com/product/displays/e-paper/epaper-2.htm">
+<span>2.66″  - 4.37″</span>
+</a>
+</li><li class="level3 nav-1-5-24-79">
+<a href="https://www.waveshare.com/product/displays/e-paper/epaper-3.htm">
+<span>1.02″  - 2.36″</span>
+</a>
+</li><li class="level3 nav-1-5-24-80 last">
+<a href="https://www.waveshare.com/product/displays/e-paper/driver-boards.htm">
+<span>Driver Boards</span>
+</a>
+</li>
+</ul>
+</li><li class="level2 nav-1-5-25 parent">
+<a href="https://www.waveshare.com/product/displays/accessories.htm">
+<span>Accessories</span>
+</a>
+<ul class="level2">
+<li class="level3 nav-1-5-25-81 first">
+<a href="https://www.waveshare.com/product/displays/accessories/cables-adapters.htm">
+<span>Cables / Adapters</span>
+</a>
+</li><li class="level3 nav-1-5-25-82">
+<a href="https://www.waveshare.com/product/displays/accessories/cases.htm">
+<span>Cases</span>
+</a>
+</li><li class="level3 nav-1-5-25-83">
+<a href="https://www.waveshare.com/product/displays/accessories/speakers.htm">
+<span>Speakers</span>
+</a>
+</li><li class="level3 nav-1-5-25-84 last">
+<a href="https://www.waveshare.com/product/displays/accessories/stand.htm">
+<span>Stand</span>
+</a>
+</li>
+</ul>
+</li><li class="level2 nav-1-5-26 last parent">
+<a href="https://www.waveshare.com/product/displays/usb-monitor.htm">
+<span>USB Monitor</span>
+</a>
+<ul class="level2">
+<li class="level3 nav-1-5-26-85 first last">
+<a href="https://www.waveshare.com/product/displays/usb-monitor/2-1-7.htm">
+<span>2.1“ - 7“</span>
+</a>
+</li>
+</ul>
+</li>
+</ul>
+</li><li class="level1 nav-1-6 parent">
+<a href="https://www.waveshare.com/product/iot-communication.htm">
+<span>IoT / Communication</span>
+</a>
+<ul class="level1">
+<li class="level2 nav-1-6-27 first parent">
+<a href="https://www.waveshare.com/product/iot-communication/long-range-wireless.htm">
+<span>Long Range Wireless</span>
+</a>
+<ul class="level2">
+<li class="level3 nav-1-6-27-86 first">
+<a href="https://www.waveshare.com/product/iot-communication/long-range-wireless/nb-iot-lora.htm">
+<span>NB-IoT / Cat-M / LoRa / LoRaWAN</span>
+</a>
+</li><li class="level3 nav-1-6-27-87">
+<a href="https://www.waveshare.com/product/iot-communication/long-range-wireless/4g-gsm-gprs.htm">
+<span>5G / 4G / Cat-1 / GSM / GPRS</span>
+</a>
+</li><li class="level3 nav-1-6-27-88 last">
+<a href="https://www.waveshare.com/product/iot-communication/long-range-wireless/gnss-gps.htm">
+<span>GNSS / GPS</span>
+</a>
+</li>
+</ul>
+</li><li class="level2 nav-1-6-28 parent">
+<a href="https://www.waveshare.com/product/iot-communication/short-range-wireless.htm">
+<span>Short Range Wireless</span>
+</a>
+<ul class="level2">
+<li class="level3 nav-1-6-28-89 first">
+<a href="https://www.waveshare.com/product/iot-communication/short-range-wireless/wifi.htm">
+<span>WiFi</span>
+</a>
+</li><li class="level3 nav-1-6-28-90">
+<a href="https://www.waveshare.com/product/iot-communication/short-range-wireless/bluetooth.htm">
+<span>Bluetooth</span>
+</a>
+</li><li class="level3 nav-1-6-28-91 last">
+<a href="https://www.waveshare.com/product/iot-communication/short-range-wireless/nfc-rf.htm">
+<span>NFC / RF</span>
+</a>
+</li>
+</ul>
+</li><li class="level2 nav-1-6-29 last parent">
+<a href="https://www.waveshare.com/product/iot-communication/wired-comm-converter.htm">
+<span>Wired Comm / Converter</span>
+</a>
+<ul class="level2">
+<li class="level3 nav-1-6-29-92 first">
+<a href="https://www.waveshare.com/product/iot-communication/wired-comm-converter/usb.htm">
+<span>USB</span>
+</a>
+</li><li class="level3 nav-1-6-29-93">
+<a href="https://www.waveshare.com/product/iot-communication/wired-comm-converter/usb-to-rs232-uart-rs485.htm">
+<span>USB TO RS232 / RS485  / UART/ CAN</span>
+</a>
+</li><li class="level3 nav-1-6-29-94">
+<a href="https://www.waveshare.com/product/iot-communication/wired-comm-converter/ethernet.htm">
+<span>Ethernet</span>
+</a>
+</li><li class="level3 nav-1-6-29-95">
+<a href="https://www.waveshare.com/product/iot-communication/wired-comm-converter/ethernet-to-uart-rs232-rs485.htm">
+<span>Ethernet TO UART / RS232 / RS485</span>
+</a>
+</li><li class="level3 nav-1-6-29-96 last">
+<a href="https://www.waveshare.com/product/iot-communication/wired-comm-converter/rs232-rs485-can-dali2.htm">
+<span>RS232 / RS485 / CAN / DALI2 </span>
+</a>
+</li>
+</ul>
+</li>
+</ul>
+</li><li class="level1 nav-1-7 parent">
+<a href="https://www.waveshare.com/product/modules.htm">
+<span>Misc Modules</span>
+</a>
+<ul class="level1">
+<li class="level2 nav-1-7-30 first parent">
+<a href="https://www.waveshare.com/product/modules/cameras-audio-video.htm">
+<span>Cameras / Audio / Video</span>
+</a>
+<ul class="level2">
+<li class="level3 nav-1-7-30-97 first">
+<a href="https://www.waveshare.com/product/modules/cameras-audio-video/speech-image-recognition-ai-vision.htm">
+<span>Speech / Image Recognition / AI Cameras</span>
+</a>
+</li><li class="level3 nav-1-7-30-98">
+<a href="https://www.waveshare.com/product/modules/cameras-audio-video/usb-cameras.htm">
+<span>USB Cameras</span>
+</a>
+</li><li class="level3 nav-1-7-30-99">
+<a href="https://www.waveshare.com/product/modules/cameras-audio-video/cameras.htm">
+<span>Cameras</span>
+</a>
+</li><li class="level3 nav-1-7-30-100 last">
+<a href="https://www.waveshare.com/product/modules/cameras-audio-video/audio-decoder.htm">
+<span>Audio Decoder</span>
+</a>
+</li>
+</ul>
+</li><li class="level2 nav-1-7-31 parent">
+<a href="https://www.waveshare.com/product/modules/sensors.htm">
+<span>Sensors</span>
+</a>
+<ul class="level2">
+<li class="level3 nav-1-7-31-101 first">
+<a href="https://www.waveshare.com/product/modules/sensors/accelerometer-angular-rate-compass.htm">
+<span>Accelerometer / Angular Rate / Compass</span>
+</a>
+</li><li class="level3 nav-1-7-31-102">
+<a href="https://www.waveshare.com/product/modules/sensors/fingerprint-sound-image-gesture.htm">
+<span>Fingerprint / Sound / Image / Gesture</span>
+</a>
+</li><li class="level3 nav-1-7-31-103">
+<a href="https://www.waveshare.com/product/modules/sensors/temperature-humidity-barometer.htm">
+<span>Temperature / Humidity / Barometer</span>
+</a>
+</li><li class="level3 nav-1-7-31-104">
+<a href="https://www.waveshare.com/product/modules/sensors/gas.htm">
+<span>Gas</span>
+</a>
+</li><li class="level3 nav-1-7-31-105">
+<a href="https://www.waveshare.com/product/modules/sensors/light-ranging.htm">
+<span>Light / Ranging / Lidar</span>
+</a>
+</li><li class="level3 nav-1-7-31-106 last">
+<a href="https://www.waveshare.com/product/modules/sensors/others.htm">
+<span>Others</span>
+</a>
+</li>
+</ul>
+</li><li class="level2 nav-1-7-32 parent">
+<a href="https://www.waveshare.com/product/modules/motors-servos.htm">
+<span>Motors / Servos</span>
+</a>
+<ul class="level2">
+<li class="level3 nav-1-7-32-107 first">
+<a href="https://www.waveshare.com/product/modules/motors-servos/drivers.htm">
+<span>Drivers</span>
+</a>
+</li><li class="level3 nav-1-7-32-108 last">
+<a href="https://www.waveshare.com/product/modules/motors-servos/motors-servos.htm">
+<span>Motors / Servos</span>
+</a>
+</li>
+</ul>
+</li><li class="level2 nav-1-7-33 last parent">
+<a href="https://www.waveshare.com/product/modules/others.htm">
+<span>Others</span>
+</a>
+<ul class="level2">
+<li class="level3 nav-1-7-33-109 first">
+<a href="https://www.waveshare.com/product/modules/others/interface-expansion.htm">
+<span>Interface Expansion</span>
+</a>
+</li><li class="level3 nav-1-7-33-110">
+<a href="https://www.waveshare.com/product/modules/others/led-buttons.htm">
+<span>LED / Buttons</span>
+</a>
+</li><li class="level3 nav-1-7-33-111">
+<a href="https://www.waveshare.com/product/modules/others/storage.htm">
+<span>Storage</span>
+</a>
+</li><li class="level3 nav-1-7-33-112">
+<a href="https://www.waveshare.com/product/modules/others/ad-da.htm">
+<span>AD / DA</span>
+</a>
+</li><li class="level3 nav-1-7-33-113">
+<a href="https://www.waveshare.com/product/modules/others/rtc.htm">
+<span>RTC</span>
+</a>
+</li><li class="level3 nav-1-7-33-114">
+<a href="https://www.waveshare.com/product/modules/others/power-relays.htm">
+<span>Power / Relays / SCR</span>
+</a>
+</li><li class="level3 nav-1-7-33-115 last">
+<a href="https://www.waveshare.com/product/modules/others/laser-module.htm">
+<span>Laser Module</span>
+</a>
+</li>
+</ul>
+</li>
+</ul>
+</li><li class="level1 nav-1-8 parent">
+<a href="https://www.waveshare.com/product/robotics.htm">
+<span>Robotics</span>
+</a>
+<ul class="level1">
+<li class="level2 nav-1-8-34 first parent">
+<a href="https://www.waveshare.com/product/robotics/mobile-robots.htm">
+<span>Mobile Robots</span>
+</a>
+<ul class="level2">
+<li class="level3 nav-1-8-34-116 first">
+<a href="https://www.waveshare.com/product/robotics/mobile-robots/jetson-series-ai-robots.htm">
+<span>Jetson Series AI Robots</span>
+</a>
+</li><li class="level3 nav-1-8-34-117">
+<a href="https://www.waveshare.com/product/robotics/mobile-robots/raspberry-pi-robots.htm">
+<span>Raspberry Pi Robots</span>
+</a>
+</li><li class="level3 nav-1-8-34-118">
+<a href="https://www.waveshare.com/product/robotics/mobile-robots/arduino-robots.htm">
+<span>Arduino-Related Robots</span>
+</a>
+</li><li class="level3 nav-1-8-34-119 last">
+<a href="https://www.waveshare.com/product/robotics/mobile-robots/micro-bit-robots.htm">
+<span>micro:bit Robots</span>
+</a>
+</li>
+</ul>
+</li><li class="level2 nav-1-8-35 parent">
+<a href="https://www.waveshare.com/product/robotics/dog-like-robots.htm">
+<span>Dog-like Robots</span>
+</a>
+<ul class="level2">
+<li class="level3 nav-1-8-35-120 first last">
+<a href="https://www.waveshare.com/product/robotics/dog-like-robots/raspberry-pi-dog-like-robots.htm">
+<span>Raspberry Pi Dog-like Robots</span>
+</a>
+</li>
+</ul>
+</li><li class="level2 nav-1-8-36 parent">
+<a href="https://www.waveshare.com/product/robotics/drivers-sensors.htm">
+<span>Drivers / Sensors / Lidar</span>
+</a>
+<ul class="level2">
+<li class="level3 nav-1-8-36-121 first">
+<a href="https://www.waveshare.com/product/robotics/drivers-sensors/drivers.htm">
+<span>Drivers</span>
+</a>
+</li><li class="level3 nav-1-8-36-122">
+<a href="https://www.waveshare.com/product/robotics/drivers-sensors/sensors.htm">
+<span>Sensors</span>
+</a>
+</li><li class="level3 nav-1-8-36-123 last">
+<a href="https://www.waveshare.com/product/robotics/drivers-sensors/lidar.htm">
+<span>Lidar</span>
+</a>
+</li>
+</ul>
+</li><li class="level2 nav-1-8-37 parent">
+<a href="https://www.waveshare.com/product/robotics/motors-servos.htm">
+<span>Motors / Servos</span>
+</a>
+<ul class="level2">
+<li class="level3 nav-1-8-37-124 first">
+<a href="https://www.waveshare.com/product/robotics/motors-servos/motors.htm">
+<span>Motors</span>
+</a>
+</li><li class="level3 nav-1-8-37-125 last">
+<a href="https://www.waveshare.com/product/robotics/motors-servos/servos.htm">
+<span>Servos</span>
+</a>
+</li>
+</ul>
+</li><li class="level2 nav-1-8-38 parent">
+<a href="https://www.waveshare.com/product/robotics/robot-arm-control.htm">
+<span>Robot Arm / Control</span>
+</a>
+<ul class="level2">
+<li class="level3 nav-1-8-38-126 first">
+<a href="https://www.waveshare.com/product/robotics/robot-arm-control/robot-arm.htm">
+<span>Robot Arm</span>
+</a>
+</li><li class="level3 nav-1-8-38-127 last">
+<a href="https://www.waveshare.com/product/robotics/robot-arm-control/pan-tilt-control.htm">
+<span>Pan Tilt Control</span>
+</a>
+</li>
+</ul>
+</li><li class="level2 nav-1-8-39 last parent">
+<a href="https://www.waveshare.com/product/robotics/robotic-components.htm">
+<span>Robotic Components</span>
+</a>
+<ul class="level2">
+<li class="level3 nav-1-8-39-128 first">
+<a href="https://www.waveshare.com/product/robotics/robotic-components/gearing.htm">
+<span>Gearing</span>
+</a>
+</li><li class="level3 nav-1-8-39-129 last">
+<a href="https://www.waveshare.com/product/robotics/robotic-components/chassis-accessories.htm">
+<span>Chassis Accessories</span>
+</a>
+</li>
+</ul>
+</li>
+</ul>
+</li><li class="level1 nav-1-9 parent">
+<a href="https://www.waveshare.com/product/arduino.htm">
+<span>Arduino-Related / ESP32</span>
+</a>
+<ul class="level1">
+<li class="level2 nav-1-9-40 first parent">
+<a href="https://www.waveshare.com/product/arduino/boards-kits.htm">
+<span>Boards / Kits</span>
+</a>
+<ul class="level2">
+<li class="level3 nav-1-9-40-130 first">
+<a href="https://www.waveshare.com/product/arduino/boards-kits/esp32-s3.htm">
+<span>ESP32-S3</span>
+</a>
+</li><li class="level3 nav-1-9-40-131">
+<a href="https://www.waveshare.com/product/arduino/boards-kits/esp32-c6.htm">
+<span>ESP32-C6</span>
+</a>
+</li><li class="level3 nav-1-9-40-132">
+<a href="https://www.waveshare.com/product/arduino/boards-kits/esp32-p4.htm">
+<span>ESP32-P4</span>
+</a>
+</li><li class="level3 nav-1-9-40-133">
+<a href="https://www.waveshare.com/product/arduino/boards-kits/other-esp32.htm">
+<span>Other ESP32</span>
+</a>
+</li><li class="level3 nav-1-9-40-134">
+<a href="https://www.waveshare.com/product/arduino/boards-kits/arduino.htm">
+<span>Arduino Compatible</span>
+</a>
+</li><li class="level3 nav-1-9-40-135 last">
+<a href="https://www.waveshare.com/product/arduino/boards-kits/nucleo.htm">
+<span>Nucleo</span>
+</a>
+</li>
+</ul>
+</li><li class="level2 nav-1-9-41 parent">
+<a href="https://www.waveshare.com/product/arduino/shields.htm">
+<span>Shields</span>
+</a>
+<ul class="level2">
+<li class="level3 nav-1-9-41-136 first">
+<a href="https://www.waveshare.com/product/arduino/shields/lcd-shields.htm">
+<span>LCD Shields</span>
+</a>
+</li><li class="level3 nav-1-9-41-137 last">
+<a href="https://www.waveshare.com/product/arduino/shields/others.htm">
+<span>Others</span>
+</a>
+</li>
+</ul>
+</li><li class="level2 nav-1-9-42 last parent">
+<a href="https://www.waveshare.com/product/arduino/robots.htm">
+<span>Robots</span>
+</a>
+<ul class="level2">
+<li class="level3 nav-1-9-42-138 first last">
+<a href="https://www.waveshare.com/product/arduino/robots/mobile-robots.htm">
+<span>Mobile Robots</span>
+</a>
+</li>
+</ul>
+</li>
+</ul>
+</li><li class="level1 nav-1-10 parent">
+<a href="https://www.waveshare.com/product/micro-bit-catalog.htm">
+<span>micro:bit</span>
+</a>
+<ul class="level1">
+<li class="level2 nav-1-10-43 first parent">
+<a href="https://www.waveshare.com/product/micro-bit-catalog/boards-kits.htm">
+<span>Boards / Kits</span>
+</a>
+<ul class="level2">
+<li class="level3 nav-1-10-43-139 first last">
+<a href="https://www.waveshare.com/product/micro-bit-catalog/boards-kits/micro-bit-boards.htm">
+<span>micro:bit</span>
+</a>
+</li>
+</ul>
+</li><li class="level2 nav-1-10-44 parent">
+<a href="https://www.waveshare.com/product/micro-bit-catalog/expansions.htm">
+<span>Expansions</span>
+</a>
+<ul class="level2">
+<li class="level3 nav-1-10-44-140 first">
+<a href="https://www.waveshare.com/product/micro-bit-catalog/expansions/displays-buttons-sound.htm">
+<span>Displays / Buttons / Sound</span>
+</a>
+</li><li class="level3 nav-1-10-44-141 last">
+<a href="https://www.waveshare.com/product/micro-bit-catalog/expansions/motors-interface.htm">
+<span>Motors / Interface</span>
+</a>
+</li>
+</ul>
+</li><li class="level2 nav-1-10-45 last parent">
+<a href="https://www.waveshare.com/product/micro-bit-catalog/robots.htm">
+<span>Robots</span>
+</a>
+<ul class="level2">
+<li class="level3 nav-1-10-45-142 first last">
+<a href="https://www.waveshare.com/product/micro-bit-catalog/robots/robot-arm.htm">
+<span>Robot Arm</span>
+</a>
+</li>
+</ul>
+</li>
+</ul>
+</li><li class="level1 nav-1-11 parent">
+<a href="https://www.waveshare.com/product/mcu-tools.htm">
+<span>MCU / ARM</span>
+</a>
+<ul class="level1">
+<li class="level2 nav-1-11-46 first parent">
+<a href="https://www.waveshare.com/product/mcu-tools/core-boards-compact-boards.htm">
+<span>Core Boards / Compact Boards</span>
+</a>
+<ul class="level2">
+<li class="level3 nav-1-11-46-143 first">
+<a href="https://www.waveshare.com/product/mcu-tools/core-boards-compact-boards/stm32-core.htm">
+<span>STM32 Core</span>
+</a>
+</li><li class="level3 nav-1-11-46-144">
+<a href="https://www.waveshare.com/product/mcu-tools/core-boards-compact-boards/stm32-discovery.htm">
+<span>STM32 Discovery</span>
+</a>
+</li><li class="level3 nav-1-11-46-145">
+<a href="https://www.waveshare.com/product/mcu-tools/core-boards-compact-boards/stm32-nucleo.htm">
+<span>STM32 Nucleo</span>
+</a>
+</li><li class="level3 nav-1-11-46-146">
+<a href="https://www.waveshare.com/product/mcu-tools/core-boards-compact-boards/lpc-core.htm">
+<span>LPC Core</span>
+</a>
+</li><li class="level3 nav-1-11-46-147">
+<a href="https://www.waveshare.com/product/mcu-tools/core-boards-compact-boards/avr-arduino.htm">
+<span>AVR Arduino</span>
+</a>
+</li><li class="level3 nav-1-11-46-148 last">
+<a href="https://www.waveshare.com/product/mcu-tools/core-boards-compact-boards/beagleboard.htm">
+<span>BeagleBoard</span>
+</a>
+</li>
+</ul>
+</li><li class="level2 nav-1-11-47 parent">
+<a href="https://www.waveshare.com/product/mcu-tools/development-boards.htm">
+<span>Development Boards / Expansions</span>
+</a>
+<ul class="level2">
+<li class="level3 nav-1-11-47-149 first">
+<a href="https://www.waveshare.com/product/mcu-tools/development-boards/esp32.htm">
+<span>ESP32</span>
+</a>
+</li><li class="level3 nav-1-11-47-150">
+<a href="https://www.waveshare.com/product/mcu-tools/development-boards/stm32-open.htm">
+<span>STM32 Open</span>
+</a>
+</li><li class="level3 nav-1-11-47-151">
+<a href="https://www.waveshare.com/product/mcu-tools/development-boards/stm32-evk.htm">
+<span>STM32 EVK</span>
+</a>
+</li><li class="level3 nav-1-11-47-152 last">
+<a href="https://www.waveshare.com/product/mcu-tools/development-boards/avr-arduino-shields.htm">
+<span>AVR Arduino Shields</span>
+</a>
+</li>
+</ul>
+</li><li class="level2 nav-1-11-48 parent">
+<a href="https://www.waveshare.com/product/mcu-tools/debugger-programmer.htm">
+<span>Debugger / Programmer</span>
+</a>
+<ul class="level2">
+<li class="level3 nav-1-11-48-153 first">
+<a href="https://www.waveshare.com/product/mcu-tools/debugger-programmer/stm32-stm8.htm">
+<span>STM32 / STM8</span>
+</a>
+</li><li class="level3 nav-1-11-48-154">
+<a href="https://www.waveshare.com/product/mcu-tools/debugger-programmer/avr.htm">
+<span>AVR</span>
+</a>
+</li><li class="level3 nav-1-11-48-155 last">
+<a href="https://www.waveshare.com/product/mcu-tools/debugger-programmer/pic.htm">
+<span>PIC</span>
+</a>
+</li>
+</ul>
+</li><li class="level2 nav-1-11-49 last parent">
+<a href="https://www.waveshare.com/product/mcu-tools/programming-adapters.htm">
+<span>Programming Adapters</span>
+</a>
+<ul class="level2">
+<li class="level3 nav-1-11-49-156 first">
+<a href="https://www.waveshare.com/product/mcu-tools/programming-adapters/stm32.htm">
+<span>STM32</span>
+</a>
+</li><li class="level3 nav-1-11-49-157">
+<a href="https://www.waveshare.com/product/mcu-tools/programming-adapters/stm8.htm">
+<span>STM8</span>
+</a>
+</li><li class="level3 nav-1-11-49-158 last">
+<a href="https://www.waveshare.com/product/mcu-tools/programming-adapters/avr.htm">
+<span>AVR</span>
+</a>
+</li>
+</ul>
+</li>
+</ul>
+</li><li class="level1 nav-1-12 parent">
+<a href="https://www.waveshare.com/product/fpga-tools.htm">
+<span>FPGA</span>
+</a>
+<ul class="level1">
+<li class="level2 nav-1-12-50 first parent">
+<a href="https://www.waveshare.com/product/fpga-tools/core-boards-compact-boards.htm">
+<span>Core Boards / Compact Boards</span>
+</a>
+<ul class="level2">
+<li class="level3 nav-1-12-50-159 first">
+<a href="https://www.waveshare.com/product/fpga-tools/core-boards-compact-boards/altera-core.htm">
+<span>ALTERA Core</span>
+</a>
+</li><li class="level3 nav-1-12-50-160 last">
+<a href="https://www.waveshare.com/product/fpga-tools/core-boards-compact-boards/xilinx-core.htm">
+<span>XILINX Core</span>
+</a>
+</li>
+</ul>
+</li><li class="level2 nav-1-12-51 parent">
+<a href="https://www.waveshare.com/product/fpga-tools/development-boards-expansions.htm">
+<span>Development Boards / Expansions</span>
+</a>
+<ul class="level2">
+<li class="level3 nav-1-12-51-161 first last">
+<a href="https://www.waveshare.com/product/fpga-tools/development-boards-expansions/altera-open.htm">
+<span>ALTERA Open</span>
+</a>
+</li>
+</ul>
+</li><li class="level2 nav-1-12-52 last parent">
+<a href="https://www.waveshare.com/product/fpga-tools/programmer.htm">
+<span>Programmer</span>
+</a>
+<ul class="level2">
+<li class="level3 nav-1-12-52-162 first">
+<a href="https://www.waveshare.com/product/fpga-tools/programmer/altera-core.htm">
+<span>ALTERA Core</span>
+</a>
+</li><li class="level3 nav-1-12-52-163 last">
+<a href="https://www.waveshare.com/product/fpga-tools/programmer/xilinx.htm">
+<span>XILINX</span>
+</a>
+</li>
+</ul>
+</li>
+</ul>
+</li><li class="level1 nav-1-13 parent">
+<a href="https://www.waveshare.com/product/sockets-adapters.htm">
+<span>Sockets / Adapters</span>
+</a>
+<ul class="level1">
+<li class="level2 nav-1-13-53 first parent">
+<a href="https://www.waveshare.com/product/sockets-adapters/specific-programming-adapters.htm">
+<span>Specific Programming Adapters</span>
+</a>
+<ul class="level2">
+<li class="level3 nav-1-13-53-164 first">
+<a href="https://www.waveshare.com/product/sockets-adapters/specific-programming-adapters/stm32-series.htm">
+<span>STM32 Series</span>
+</a>
+</li><li class="level3 nav-1-13-53-165">
+<a href="https://www.waveshare.com/product/sockets-adapters/specific-programming-adapters/stm8-series.htm">
+<span>STM8 Series</span>
+</a>
+</li><li class="level3 nav-1-13-53-166 last">
+<a href="https://www.waveshare.com/product/sockets-adapters/specific-programming-adapters/avr-series.htm">
+<span>AVR Series</span>
+</a>
+</li>
+</ul>
+</li><li class="level2 nav-1-13-54 parent">
+<a href="https://www.waveshare.com/product/sockets-adapters/qfp.htm">
+<span>QFP</span>
+</a>
+<ul class="level2">
+<li class="level3 nav-1-13-54-167 first">
+<a href="https://www.waveshare.com/product/sockets-adapters/qfp/sockets.htm">
+<span>Sockets</span>
+</a>
+</li><li class="level3 nav-1-13-54-168">
+<a href="https://www.waveshare.com/product/sockets-adapters/qfp/to-dip.htm">
+<span>TO DIP</span>
+</a>
+</li><li class="level3 nav-1-13-54-169 last">
+<a href="https://www.waveshare.com/product/sockets-adapters/qfp/with-pinheader.htm">
+<span>With Pinheader</span>
+</a>
+</li>
+</ul>
+</li><li class="level2 nav-1-13-55 parent">
+<a href="https://www.waveshare.com/product/sockets-adapters/qfn-mlf.htm">
+<span>QFN / MLF</span>
+</a>
+<ul class="level2">
+<li class="level3 nav-1-13-55-170 first">
+<a href="https://www.waveshare.com/product/sockets-adapters/qfn-mlf/sockets.htm">
+<span>Sockets</span>
+</a>
+</li><li class="level3 nav-1-13-55-171">
+<a href="https://www.waveshare.com/product/sockets-adapters/qfn-mlf/to-dip.htm">
+<span>TO DIP</span>
+</a>
+</li><li class="level3 nav-1-13-55-172 last">
+<a href="https://www.waveshare.com/product/sockets-adapters/qfn-mlf/with-pinheader.htm">
+<span>With Pinheader</span>
+</a>
+</li>
+</ul>
+</li><li class="level2 nav-1-13-56 parent">
+<a href="https://www.waveshare.com/product/sockets-adapters/sop.htm">
+<span>SOP</span>
+</a>
+<ul class="level2">
+<li class="level3 nav-1-13-56-173 first">
+<a href="https://www.waveshare.com/product/sockets-adapters/sop/sockets.htm">
+<span>Sockets</span>
+</a>
+</li><li class="level3 nav-1-13-56-174 last">
+<a href="https://www.waveshare.com/product/sockets-adapters/sop/to-dip.htm">
+<span>TO DIP</span>
+</a>
+</li>
+</ul>
+</li><li class="level2 nav-1-13-57 parent">
+<a href="https://www.waveshare.com/product/sockets-adapters/ssop-tssop.htm">
+<span>SSOP / TSSOP</span>
+</a>
+<ul class="level2">
+<li class="level3 nav-1-13-57-175 first">
+<a href="https://www.waveshare.com/product/sockets-adapters/ssop-tssop/sockets.htm">
+<span>Sockets</span>
+</a>
+</li><li class="level3 nav-1-13-57-176 last">
+<a href="https://www.waveshare.com/product/sockets-adapters/ssop-tssop/to-dip.htm">
+<span>TO DIP</span>
+</a>
+</li>
+</ul>
+</li><li class="level2 nav-1-13-58 parent">
+<a href="https://www.waveshare.com/product/sockets-adapters/tsop-msop-sot.htm">
+<span>TSOP / MSOP / SOT</span>
+</a>
+<ul class="level2">
+<li class="level3 nav-1-13-58-177 first">
+<a href="https://www.waveshare.com/product/sockets-adapters/tsop-msop-sot/sockets.htm">
+<span>Sockets</span>
+</a>
+</li><li class="level3 nav-1-13-58-178 last">
+<a href="https://www.waveshare.com/product/sockets-adapters/tsop-msop-sot/to-dip.htm">
+<span>TO DIP</span>
+</a>
+</li>
+</ul>
+</li><li class="level2 nav-1-13-59 last parent">
+<a href="https://www.waveshare.com/product/sockets-adapters/plcc.htm">
+<span>PLCC</span>
+</a>
+<ul class="level2">
+<li class="level3 nav-1-13-59-179 first">
+<a href="https://www.waveshare.com/product/sockets-adapters/plcc/sockets.htm">
+<span>Sockets</span>
+</a>
+</li><li class="level3 nav-1-13-59-180 last">
+<a href="https://www.waveshare.com/product/sockets-adapters/plcc/to-dip.htm">
+<span>TO DIP</span>
+</a>
+</li>
+</ul>
+</li>
+</ul>
+</li><li class="level1 nav-1-14 last parent">
+<a href="https://www.waveshare.com/product/accessories.htm">
+<span>Accessories</span>
+</a>
+<ul class="level1">
+<li class="level2 nav-1-14-60 first parent">
+<a href="https://www.waveshare.com/product/accessories/adapters-cables-antennas.htm">
+<span>Adapters / Cables / Antennas</span>
+</a>
+<ul class="level2">
+<li class="level3 nav-1-14-60-181 first">
+<a href="https://www.waveshare.com/product/accessories/adapters-cables-antennas/hdmi.htm">
+<span>HDMI</span>
+</a>
+</li><li class="level3 nav-1-14-60-182">
+<a href="https://www.waveshare.com/product/accessories/adapters-cables-antennas/usb.htm">
+<span>USB</span>
+</a>
+</li><li class="level3 nav-1-14-60-183">
+<a href="https://www.waveshare.com/product/accessories/adapters-cables-antennas/serial-cables.htm">
+<span>Serial Cables</span>
+</a>
+</li><li class="level3 nav-1-14-60-184">
+<a href="https://www.waveshare.com/product/accessories/adapters-cables-antennas/jumper-wires.htm">
+<span>Jumper Wires</span>
+</a>
+</li><li class="level3 nav-1-14-60-185">
+<a href="https://www.waveshare.com/product/accessories/adapters-cables-antennas/ffc.htm">
+<span>FFC</span>
+</a>
+</li><li class="level3 nav-1-14-60-186 last">
+<a href="https://www.waveshare.com/product/accessories/adapters-cables-antennas/antennas.htm">
+<span>Antennas</span>
+</a>
+</li>
+</ul>
+</li><li class="level2 nav-1-14-61 parent">
+<a href="https://www.waveshare.com/product/accessories/motors-servos.htm">
+<span>Motors / Servos</span>
+</a>
+<ul class="level2">
+<li class="level3 nav-1-14-61-187 first">
+<a href="https://www.waveshare.com/product/accessories/motors-servos/motors.htm">
+<span>Motors</span>
+</a>
+</li><li class="level3 nav-1-14-61-188 last">
+<a href="https://www.waveshare.com/product/accessories/motors-servos/servos.htm">
+<span>Servos</span>
+</a>
+</li>
+</ul>
+</li><li class="level2 nav-1-14-62 parent">
+<a href="https://www.waveshare.com/product/accessories/power-heat-sinks.htm">
+<span>Power / Heat Sinks</span>
+</a>
+<ul class="level2">
+<li class="level3 nav-1-14-62-189 first">
+<a href="https://www.waveshare.com/product/accessories/power-heat-sinks/power-supply.htm">
+<span>Power Supply</span>
+</a>
+</li><li class="level3 nav-1-14-62-190">
+<a href="https://www.waveshare.com/product/accessories/power-heat-sinks/solar-power.htm">
+<span>Solar Power</span>
+</a>
+</li><li class="level3 nav-1-14-62-191">
+<a href="https://www.waveshare.com/product/accessories/power-heat-sinks/heat-sinks.htm">
+<span>Heat Sinks</span>
+</a>
+</li><li class="level3 nav-1-14-62-192 last">
+<a href="https://www.waveshare.com/product/accessories/power-heat-sinks/cooling-fans.htm">
+<span>Cooling Fans</span>
+</a>
+</li>
+</ul>
+</li><li class="level2 nav-1-14-63 last parent">
+<a href="https://www.waveshare.com/product/accessories/misc.htm">
+<span>Misc</span>
+</a>
+<ul class="level2">
+<li class="level3 nav-1-14-63-193 first">
+<a href="https://www.waveshare.com/product/accessories/misc/raspberry-pi-cases.htm">
+<span>Raspberry Pi Cases</span>
+</a>
+</li><li class="level3 nav-1-14-63-194">
+<a href="https://www.waveshare.com/product/accessories/misc/jetson-nano-cases.htm">
+<span>Jetson Nano Cases</span>
+</a>
+</li><li class="level3 nav-1-14-63-195">
+<a href="https://www.waveshare.com/product/accessories/misc/display-cases.htm">
+<span>Display Cases</span>
+</a>
+</li><li class="level3 nav-1-14-63-196">
+<a href="https://www.waveshare.com/product/accessories/misc/speakers.htm">
+<span>Speakers</span>
+</a>
+</li><li class="level3 nav-1-14-63-197 last">
+<a href="https://www.waveshare.com/product/accessories/misc/storage.htm">
+<span>Storage</span>
+</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>            </ul>
+          </nav>
+      </div>
+  </li>
+  <li>
+      <a href="https://www.waveshare.com/">
+                        <span>Home</span>
+                </a>
+  </li>
+    
+<li class="level0 act level-top parent"><a class="level-top" href="/new?dir=desc&amp;order=position"> <span>New Arrivals</span> </a></li>
+<li class="level0 act level-top parent"><a class="level-top" href="/product/displays.htm"> <span>Displays</span> </a></li>
+<li class="level0 act level-top parent"><a class="level-top" href="/product/ai.htm"> <span>AI</span> </a></li>
+<li class="level0 act level-top parent"><a class="level-top" href="/shipping"> <span>Shipping</span> </a></li>
+<li class="level0 act level-top parent"><a class="level-top" href="/payment"> <span>Payment</span> </a></li>
+<li class="level0 act level-top parent"><a class="level-top" href="/customization.html"> <span>Customization</span> </a></li>
+<li class="level0 level-top parent"><a class="level-top" href="/wiki"> <span>Wiki</span> </a></li>
+</ul>
+
+<script type="text/javascript">
+//<![CDATA[
+var CUSTOMMENU_POPUP_TOP_OFFSET = 50;
+var eternalCustommenuTimerShow = {};
+var eternalCustommenuTimerHide = {};
+var eternalActiveMenu = null;
+eternalCustomMenuMobileToggle();
+//]]>
+jQuery(function($){
+    var $ = jQuery;
+    var timer;
+    function addopen() {
+        clearTimeout(timer); 
+        $('#ws-sidebar-home-top').addClass('open');
+    }
+    function delayedRemoveopen() {
+        timer = setTimeout(function() {
+            $('#ws-sidebar-home-top').removeClass('open');
+        }, 100); 
+    }
+    $('#ws-show-products').on('click mouseenter', addopen);
+    $('#ws-sidebar-home-top').on('mouseenter', addopen);
+    $('#ws-show-products').on('mouseleave', delayedRemoveopen);
+    $('#ws-sidebar-home-top').on('mouseleave', delayedRemoveopen);
+
+    if (!('ontouchstart' in window)) {
+        $('#ws-sidebar-home-top ul.level0 li').hover(
+            function() {
+                $(this).addClass('pick');
+                if ($(this).children('ul').length > 0) {
+                    $(this).children('ul').stop(true, true).show();
+                }
+            }, 
+            function() {
+                $(this).removeClass('pick');
+                if ($(this).children('ul').length > 0) {
+                    $(this).children('ul').stop(true, true).hide();
+                }
+            }
+        );
+    }
+
+    $('#ws-sidebar-home-top li a').click(function(e) {
+        e.stopPropagation();
+    });
+    $('#ws-sidebar-home-top ul.level0 li.parent > ul').hide();
+    $('#ws-sidebar-home-top li > a > span').click(function(e) {
+        if ('ontouchstart' in window) {
+            e.stopPropagation();
+            let $parentLi = $(this).parent().parent();
+            if ($parentLi.children('ul').length > 0) {
+                $parentLi.siblings().find('ul').hide();
+                $parentLi.children('ul').toggle();
+                return false;
+            }
+        }
+    });
+    delayedRemoveopen();
+});
+</script>                        </div>
+                        <!--<a class="navbar-text navbar-right hidden-xs" href="https://service.waveshare.com"><span class="d-flex align-content-center"><i class="icon-waveshare-supp"></i>SUPPORT</span></a>-->
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    #nav li a{
+        padding: 12px 12px !important; 
+    }
+    .navbar-collapse.notin {
+      overflow-y: unset !important;
+    }
+</style>    </div>
+    <div class="main-container">
+                                        <div class="breadcrumbs">
+    <div class="container">
+        <ul>
+                            <li class="Home">
+                                    <a href="/" title="Home">Home</a>
+                                                    <span>&gt; </span>
+                                </li>
+                            <li class="Shopping Cart">
+                                    <strong>Shopping Cart</strong>
+                                                </li>
+                    </ul>
+    </div>
+</div>
+                <div class="main">
+            <div class="container">
+                <div class="main-content">
+                                        
+<script type="text/javascript">
+//<![CDATA[
+var ETERNAL_AJAXCART_PROCESSING = "Please wait...";
+var ETERNAL_AJAXCART_SOMETHING_BAD = "Something bad happened.";
+var ETERNAL_AJAXCART_SELECT_OPTIONS = "Please Select Options";
+var ETERNAL_AJAXCART_ERROR = { bg_color: '#F66F82', color: '#000'};
+//var ETERNAL_AJAXCART_INFO = { bg_color: '#65ae00', color: '#ffffff'};
+var ETERNAL_AJAXCART_INFO = { bg_color: '#1c1d1f', color: '#e8e8e8'};
+var ETERNAL_AJAXCART_WARN = { bg_color: '#1c1d1f', color: '#e8e8e8'};
+var ETERNAL_AJAX_CART = "Add to Cart";
+var ETERNAL_AJAX_WISHLIST = "Add to Wishlist";
+var ETERNAL_AJAX_COMPARE = "Add to Compare";
+//]]>
+</script><div class="cart">
+    <div class="page-title title-buttons title-buttons-r">
+        <h1>Shopping Cart</h1>
+                <ul class="checkout-types hidden-xs hidden-sm hidden-md">
+                                                                        <li><button type="button" title="Proceed to Checkout" class="button button-inverse btn-lg btn-large btn-proceed-checkout btn-checkout" onclick="window.location='https://www.waveshare.com/onepagecheckout/';"><span><span>Checkout</span></span></button>
+
+</li>
+                            </ul>
+            </div>
+            <!--<form action="https://www.waveshare.com/checkout/cart/updatePost/" method="post">-->
+    <form action="/checkout/cart/updatePost" method="post">
+        <input name="form_key" type="hidden" value="nW4tYQ6qyG5ihLC0" />
+        <fieldset>
+            <table id="shopping-cart-table" class="data-table cart-table">
+                <col class="shopping-cart-w-name"/>
+                            <col class="shopping-cart-w-price"/>
+                                        <col class="shopping-cart-w-qty"/>
+                            <col class="shopping-cart-w-subtotal"/>
+                        
+                            <thead>
+                                        <tr>
+                        <!--<th class="column-picture"></th>-->
+                        <th class="column-name" rowspan="1"><span class="nobr">Product Name</span></th>
+                        <th class="a-center" colspan="1"><span class="nobr">Unit Price</span></th>
+                        <th rowspan="1" class="a-center">Qty</th>
+                        <th class="a-center" colspan="1">Subtotal</th>
+                    </tr>
+                                        <tr class="mobile-row">
+                        <th colspan="4">
+                            6 Product(s) In Your Cart                        </th>
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+                        <td colspan="50" class="a-right">
+                                                            <button type="button" title="Continue Shopping" class="button btn-continue" onclick="setLocation('https://www.waveshare.com/')"><span><span>Continue Shopping</span></span></button>
+                                                        <button type="submit" name="update_cart_action" value="update_qty" title="Update Shopping Cart" class="button btn-update"><span><span>Update Shopping Cart</span></span></button>
+                            <button type="submit" name="update_cart_action" value="empty_cart" title="Clear Shopping Cart" class="button btn-empty" id="empty_cart_button"><span><span>Clear Shopping Cart</span></span></button>
+                            <!--[if lt IE 8]>
+                            <input type="hidden" id="update_cart_action_container" />
+                            <script type="text/javascript">
+                            //<![CDATA[
+                                Event.observe(window, 'load', function()
+                                {
+                                    // Internet Explorer (lt 8) does not support value attribute in button elements
+                                    $emptyCartButton = $('empty_cart_button');
+                                    $cartActionContainer = $('update_cart_action_container');
+                                    if ($emptyCartButton && $cartActionContainer) {
+                                        Event.observe($emptyCartButton, 'click', function()
+                                        {
+                                            $emptyCartButton.setAttribute('name', 'update_cart_action_temp');
+                                            $cartActionContainer.setAttribute('name', 'update_cart_action');
+                                            $cartActionContainer.setValue('empty_cart');
+                                        });
+                                    }
+
+                                });
+                            //]]>
+                            </script>
+                            <![endif]-->
+                        </td>
+                    </tr>
+                </tfoot>
+                <tbody>
+                                    <tr>
+    <td class="column-name">
+        <div class="product-image">
+            <a href="https://www.waveshare.com/pcie-to-m.2-board-d.htm" title="PCIe To M.2 Adapter Board (D) for Raspberry Pi 5, Compatible with 2280 / 2260 / 2242 / 2230 size NVMe Protocol M.2 SSD, Raspberry Pi 5 NVMe">                <img src="https://www.waveshare.com/media/catalog/product/cache/1/thumbnail/180x180/9df78eab33525d08d6e5fb8d27136e95/p/c/pcie-to-m.2-board-d-1.jpg" alt="PCIe To M.2 Adapter Board (D) for Raspberry Pi 5, Compatible with 2280 / 2260 / 2242 / 2230 size NVMe Protocol M.2 SSD, Raspberry Pi 5 NVMe" />
+            </a>        </div>
+        <div class="product-shop">
+            <h2 class="product-name">
+                            <a href="https://www.waveshare.com/pcie-to-m.2-board-d.htm">PCIe To M.2 Adapter Board (D) for Raspberry Pi 5, Compatible with 2280 / 2260 / 2242 / 2230 size NVMe Protocol M.2 SSD, Raspberry Pi 5 NVMe</a>
+                        </h2>
+            <!-- add by libearxiong 20171217 -->
+            <div class="sku-part sku-part-all">
+                <div>
+                    <p>SKU:</p>
+                    <p>27709</p>
+                </div>
+                                <div>
+                    <p>Part No.:</p>
+                    <p>PCIe TO M.2 Board (D)</p>
+                </div>
+                            </div>
+            
+                                                                                        <div class="actions">
+                                <!--<a class="button link-edit" href="https://www.waveshare.com/checkout/cart/configure/id/1260247/" title="Edit item parameters">Edit</a>-->
+                                            </div>
+        </div>
+    </td>
+    
+
+    
+                <td class="a-center">
+            <span class="mobile-label">Unit Price: </span>
+                            <span class="cart-price">
+                                                <span class="price">€7.21</span>                
+            </span>
+
+                    </td>
+        <!-- inclusive price starts here -->
+            
+    <!--Sub total starts here -->
+    <td class="a-center">
+        <div class="add-to-cart">
+            <input name="cart[1260247][qty]" value="1" size="4" title="Qty" class="input-text qty" maxlength="12" />
+            <button type="button" class="button-arrow button-up">Increase</button>
+            <button type="button" class="button-arrow button-down">Decrease</button>
+        </div>
+        <button type="submit" name="update_cart_action" value="update_qty" title="Update Shopping Cart" class="button btn-update"><span>update</span></button>
+    </td>
+        <td class="a-center"><div class="total-price">
+        <span class="mobile-label">Subtotal: </span>
+                    <span class="cart-price">
+        
+                                                <span class="price">€7.21</span>                            
+        </span>
+                <a href="https://www.waveshare.com/checkout/cart/delete/id/1260247/uenc/aHR0cHM6Ly93d3cud2F2ZXNoYXJlLmNvbS9jaGVja291dC9jYXJ0Lw,,/" title="Remove item" class="button-arrow btn-remove btn-remove2">Remove item</a>
+    </div></td>
+        </tr>
+                                    <tr>
+    <td class="column-name">
+        <div class="product-image">
+            <a href="https://www.waveshare.com/pcie-to-4-ch-pcie-hat.htm" title="4-Ch PCIe FFC Adapter Board for Raspberry Pi 5, Expands The PCIe Interface Of The Pi 5 To 4-Ch PCIe FFC Connectors, Supports Stacking Multiple PCIe HATs, Raspberry Pi 5 PCIe HAT">                <img src="https://www.waveshare.com/media/catalog/product/cache/1/thumbnail/180x180/9df78eab33525d08d6e5fb8d27136e95/p/c/pcie-to-4-ch-pcie-hat-1.jpg" alt="4-Ch PCIe FFC Adapter Board for Raspberry Pi 5, Expands The PCIe Interface Of The Pi 5 To 4-Ch PCIe FFC Connectors, Supports Stacking Multiple PCIe HATs, Raspberry Pi 5 PCIe HAT" />
+            </a>        </div>
+        <div class="product-shop">
+            <h2 class="product-name">
+                            <a href="https://www.waveshare.com/pcie-to-4-ch-pcie-hat.htm">4-Ch PCIe FFC Adapter Board for Raspberry Pi 5, Expands The PCIe Interface Of The Pi 5 To 4-Ch PCIe FFC Connectors, Supports Stacking Multiple PCIe HATs, Raspberry Pi 5 PCIe HAT</a>
+                        </h2>
+            <!-- add by libearxiong 20171217 -->
+            <div class="sku-part sku-part-all">
+                <div>
+                    <p>SKU:</p>
+                    <p>31527</p>
+                </div>
+                                <div>
+                    <p>Part No.:</p>
+                    <p>PCIe TO 4-CH PCIe HAT</p>
+                </div>
+                            </div>
+            
+                                                                                        <div class="actions">
+                                <!--<a class="button link-edit" href="https://www.waveshare.com/checkout/cart/configure/id/1260250/" title="Edit item parameters">Edit</a>-->
+                                            </div>
+        </div>
+    </td>
+    
+
+    
+                <td class="a-center">
+            <span class="mobile-label">Unit Price: </span>
+                            <span class="cart-price">
+                                                <span class="price">€18.68</span>                
+            </span>
+
+                    </td>
+        <!-- inclusive price starts here -->
+            
+    <!--Sub total starts here -->
+    <td class="a-center">
+        <div class="add-to-cart">
+            <input name="cart[1260250][qty]" value="1" size="4" title="Qty" class="input-text qty" maxlength="12" />
+            <button type="button" class="button-arrow button-up">Increase</button>
+            <button type="button" class="button-arrow button-down">Decrease</button>
+        </div>
+        <button type="submit" name="update_cart_action" value="update_qty" title="Update Shopping Cart" class="button btn-update"><span>update</span></button>
+    </td>
+        <td class="a-center"><div class="total-price">
+        <span class="mobile-label">Subtotal: </span>
+                    <span class="cart-price">
+        
+                                                <span class="price">€18.68</span>                            
+        </span>
+                <a href="https://www.waveshare.com/checkout/cart/delete/id/1260250/uenc/aHR0cHM6Ly93d3cud2F2ZXNoYXJlLmNvbS9jaGVja291dC9jYXJ0Lw,,/" title="Remove item" class="button-arrow btn-remove btn-remove2">Remove item</a>
+    </div></td>
+        </tr>
+                                    <tr>
+    <td class="column-name">
+        <div class="product-image">
+            <a href="https://www.waveshare.com/raspberry-pi-5-official-active-cooler.htm" title="Official Raspberry Pi Active Cooler for Raspberry Pi 5, Temperature-controlled Blower Fan, Aluminium Heatsink, With Thermal Tapes">                <img src="https://www.waveshare.com/media/catalog/product/cache/1/thumbnail/180x180/9df78eab33525d08d6e5fb8d27136e95/r/a/raspberry-pi-5-official-active-cooler-1.jpg" alt="Official Raspberry Pi Active Cooler for Raspberry Pi 5, Temperature-controlled Blower Fan, Aluminium Heatsink, With Thermal Tapes" />
+            </a>        </div>
+        <div class="product-shop">
+            <h2 class="product-name">
+                            <a href="https://www.waveshare.com/raspberry-pi-5-official-active-cooler.htm">Official Raspberry Pi Active Cooler for Raspberry Pi 5, Temperature-controlled Blower Fan, Aluminium Heatsink, With Thermal Tapes</a>
+                        </h2>
+            <!-- add by libearxiong 20171217 -->
+            <div class="sku-part sku-part-all">
+                <div>
+                    <p>SKU:</p>
+                    <p>25939</p>
+                </div>
+                                <div>
+                    <p>Part No.:</p>
+                    <p>Raspberry Pi 5 Official Active Cooler</p>
+                </div>
+                            </div>
+            
+                                                                                        <div class="actions">
+                                <!--<a class="button link-edit" href="https://www.waveshare.com/checkout/cart/configure/id/1260252/" title="Edit item parameters">Edit</a>-->
+                                            </div>
+        </div>
+    </td>
+    
+
+    
+                <td class="a-center">
+            <span class="mobile-label">Unit Price: </span>
+                            <span class="cart-price">
+                                                <span class="price">€5.09</span>                
+            </span>
+
+                    </td>
+        <!-- inclusive price starts here -->
+            
+    <!--Sub total starts here -->
+    <td class="a-center">
+        <div class="add-to-cart">
+            <input name="cart[1260252][qty]" value="1" size="4" title="Qty" class="input-text qty" maxlength="12" />
+            <button type="button" class="button-arrow button-up">Increase</button>
+            <button type="button" class="button-arrow button-down">Decrease</button>
+        </div>
+        <button type="submit" name="update_cart_action" value="update_qty" title="Update Shopping Cart" class="button btn-update"><span>update</span></button>
+    </td>
+        <td class="a-center"><div class="total-price">
+        <span class="mobile-label">Subtotal: </span>
+                    <span class="cart-price">
+        
+                                                <span class="price">€5.09</span>                            
+        </span>
+                <a href="https://www.waveshare.com/checkout/cart/delete/id/1260252/uenc/aHR0cHM6Ly93d3cud2F2ZXNoYXJlLmNvbS9jaGVja291dC9jYXJ0Lw,,/" title="Remove item" class="button-arrow btn-remove btn-remove2">Remove item</a>
+    </div></td>
+        </tr>
+                                    <tr>
+    <td class="column-name">
+        <div class="product-image">
+            <a href="https://www.waveshare.com/10.1-dsi-touch-a.htm" title="10.1inch DSI Capacitive Touch Display, 800×1280, IPS Panel, Optical Bonding Toughened Glass Panel, 10-Point Touch">                <img src="https://www.waveshare.com/media/catalog/product/cache/1/thumbnail/180x180/9df78eab33525d08d6e5fb8d27136e95/1/0/10.1-dsi-touch-a-1.jpg" alt="10.1inch DSI Capacitive Touch Display, 800×1280, IPS Panel, Optical Bonding Toughened Glass Panel, 10-Point Touch" />
+            </a>        </div>
+        <div class="product-shop">
+            <h2 class="product-name">
+                            <a href="https://www.waveshare.com/10.1-dsi-touch-a.htm">10.1inch DSI Capacitive Touch Display, 800×1280, IPS Panel, Optical Bonding Toughened Glass Panel, 10-Point Touch</a>
+                        </h2>
+            <!-- add by libearxiong 20171217 -->
+            <div class="sku-part sku-part-all">
+                <div>
+                    <p>SKU:</p>
+                    <p>30052</p>
+                </div>
+                                <div>
+                    <p>Part No.:</p>
+                    <p>10.1-DSI-TOUCH-A</p>
+                </div>
+                            </div>
+            
+                                                                                        <div class="actions">
+                                <!--<a class="button link-edit" href="https://www.waveshare.com/checkout/cart/configure/id/1260255/" title="Edit item parameters">Edit</a>-->
+                                            </div>
+        </div>
+    </td>
+    
+
+    
+                <td class="a-center">
+            <span class="mobile-label">Unit Price: </span>
+                            <span class="cart-price">
+                                                <span class="price">€50.95</span>                
+            </span>
+
+                    </td>
+        <!-- inclusive price starts here -->
+            
+    <!--Sub total starts here -->
+    <td class="a-center">
+        <div class="add-to-cart">
+            <input name="cart[1260255][qty]" value="1" size="4" title="Qty" class="input-text qty" maxlength="12" />
+            <button type="button" class="button-arrow button-up">Increase</button>
+            <button type="button" class="button-arrow button-down">Decrease</button>
+        </div>
+        <button type="submit" name="update_cart_action" value="update_qty" title="Update Shopping Cart" class="button btn-update"><span>update</span></button>
+    </td>
+        <td class="a-center"><div class="total-price">
+        <span class="mobile-label">Subtotal: </span>
+                    <span class="cart-price">
+        
+                                                <span class="price">€50.95</span>                            
+        </span>
+                <a href="https://www.waveshare.com/checkout/cart/delete/id/1260255/uenc/aHR0cHM6Ly93d3cud2F2ZXNoYXJlLmNvbS9jaGVja291dC9jYXJ0Lw,,/" title="Remove item" class="button-arrow btn-remove btn-remove2">Remove item</a>
+    </div></td>
+        </tr>
+                                    <tr>
+    <td class="column-name">
+        <div class="product-image">
+            <a href="https://www.waveshare.com/ffc-20pin-0.5pitch-0.5m-opposite-side-contact.htm" title="DIY HDMI Cable: 0.5m FFC">                <img src="https://www.waveshare.com/media/catalog/product/cache/1/thumbnail/180x180/9df78eab33525d08d6e5fb8d27136e95/f/f/ffc-20pin-0.5pitch-0.5m-opposite-side-contact.jpg" alt="DIY HDMI Cable: 0.5m FFC" />
+            </a>        </div>
+        <div class="product-shop">
+            <h2 class="product-name">
+                            <a href="https://www.waveshare.com/ffc-20pin-0.5pitch-0.5m-opposite-side-contact.htm">DIY HDMI Cable: 0.5m FFC</a>
+                        </h2>
+            <!-- add by libearxiong 20171217 -->
+            <div class="sku-part sku-part-all">
+                <div>
+                    <p>SKU:</p>
+                    <p>14722</p>
+                </div>
+                                <div>
+                    <p>Part No.:</p>
+                    <p>FFC 20PIN 0.5Pitch 0.5m (opposite side contact)</p>
+                </div>
+                            </div>
+            
+                                                                                        <div class="actions">
+                                <!--<a class="button link-edit" href="https://www.waveshare.com/checkout/cart/configure/id/1260259/" title="Edit item parameters">Edit</a>-->
+                                            </div>
+        </div>
+    </td>
+    
+
+    
+                <td class="a-center">
+            <span class="mobile-label">Unit Price: </span>
+                            <span class="cart-price">
+                                                <span class="price">€1.01</span>                
+            </span>
+
+                    </td>
+        <!-- inclusive price starts here -->
+            
+    <!--Sub total starts here -->
+    <td class="a-center">
+        <div class="add-to-cart">
+            <input name="cart[1260259][qty]" value="1" size="4" title="Qty" class="input-text qty" maxlength="12" />
+            <button type="button" class="button-arrow button-up">Increase</button>
+            <button type="button" class="button-arrow button-down">Decrease</button>
+        </div>
+        <button type="submit" name="update_cart_action" value="update_qty" title="Update Shopping Cart" class="button btn-update"><span>update</span></button>
+    </td>
+        <td class="a-center"><div class="total-price">
+        <span class="mobile-label">Subtotal: </span>
+                    <span class="cart-price">
+        
+                                                <span class="price">€1.01</span>                            
+        </span>
+                <a href="https://www.waveshare.com/checkout/cart/delete/id/1260259/uenc/aHR0cHM6Ly93d3cud2F2ZXNoYXJlLmNvbS9jaGVja291dC9jYXJ0Lw,,/" title="Remove item" class="button-arrow btn-remove btn-remove2">Remove item</a>
+    </div></td>
+        </tr>
+                                    <tr>
+    <td class="column-name">
+        <div class="product-image">
+            <a href="https://www.waveshare.com/hdmi-adapter-vertical.htm?sku=23134" title="DIY HDMI Cable: Micro HDMI Adapter Vertical">                <img src="https://www.waveshare.com/media/catalog/product/cache/1/thumbnail/180x180/9df78eab33525d08d6e5fb8d27136e95/m/i/micro-hdmi-adapter-vertical-1.jpg" alt="DIY HDMI Cable: Micro HDMI Adapter Vertical" />
+            </a>        </div>
+        <div class="product-shop">
+            <h2 class="product-name">
+                            <a href="https://www.waveshare.com/hdmi-adapter-vertical.htm?sku=23134">DIY HDMI Cable: Micro HDMI Adapter Vertical</a>
+                        </h2>
+            <!-- add by libearxiong 20171217 -->
+            <div class="sku-part sku-part-all">
+                <div>
+                    <p>SKU:</p>
+                    <p>23134</p>
+                </div>
+                                <div>
+                    <p>Part No.:</p>
+                    <p>Micro HDMI Adapter Vertical</p>
+                </div>
+                            </div>
+            
+                                                                                        <div class="actions">
+                                            </div>
+        </div>
+    </td>
+    
+
+    
+                <td class="a-center">
+            <span class="mobile-label">Unit Price: </span>
+                            <span class="cart-price">
+                                                <span class="price">€2.54</span>                
+            </span>
+
+                    </td>
+        <!-- inclusive price starts here -->
+            
+    <!--Sub total starts here -->
+    <td class="a-center">
+        <div class="add-to-cart">
+            <input name="cart[1260260][qty]" value="1" size="4" title="Qty" class="input-text qty" maxlength="12" />
+            <button type="button" class="button-arrow button-up">Increase</button>
+            <button type="button" class="button-arrow button-down">Decrease</button>
+        </div>
+        <button type="submit" name="update_cart_action" value="update_qty" title="Update Shopping Cart" class="button btn-update"><span>update</span></button>
+    </td>
+        <td class="a-center"><div class="total-price">
+        <span class="mobile-label">Subtotal: </span>
+                    <span class="cart-price">
+        
+                                                <span class="price">€2.54</span>                            
+        </span>
+                <a href="https://www.waveshare.com/checkout/cart/delete/id/1260260/uenc/aHR0cHM6Ly93d3cud2F2ZXNoYXJlLmNvbS9jaGVja291dC9jYXJ0Lw,,/" title="Remove item" class="button-arrow btn-remove btn-remove2">Remove item</a>
+    </div></td>
+        </tr>
+                                </tbody>
+            </table>
+            <script type="text/javascript">decorateTable('shopping-cart-table')</script>
+            <script type="text/javascript">
+            //<![CDATA[
+            jQuery(function($) {
+                $('.add-to-cart .button-up').click(function() {
+                    $qty = $(this).parent().find('.qty');
+                    qty = parseInt($qty.val()) + 1;
+                    $qty.val(qty);
+                });
+                $('.add-to-cart .button-down').click(function() {
+                    $qty = $(this).parent().find('.qty');
+                    qty = parseInt($qty.val()) - 1;
+                    if (qty < 0)
+                        qty = 0;
+                    $qty.val(qty);
+                });
+            });
+            //]]>
+            </script>
+        </fieldset>
+    </form>
+    <div class="cart-collaterals row">
+        <div class="cart-tabs col-sm-7">
+            <!--<dl id="cart-tabs" class="cart-tabs-inner"  style="display: none;">                                                                                                     <dt class="tab-title">Discount Codes</dt>
+                    <dd><form id="discount-coupon-form" action="https://www.waveshare.com/checkout/cart/couponPost/" method="post">
+    <div class="discount">
+        <h2>Discount Codes</h2>
+        <div class="discount-form">
+            <label for="coupon_code">Enter your coupon code if you have one.</label>
+            <input type="hidden" name="remove" id="remove-coupone" value="0" />
+            <div class="input-box">
+                <input class="input-text" id="coupon_code" name="coupon_code" value="" />
+            </div>
+            <div class="buttons-set">
+                <button type="button" title="Apply Coupon" class="button" onclick="discountForm.submit(false)" value="Apply Coupon"><span><span>Apply Coupon</span></span></button>
+                            </div>
+        </div>
+    </div>
+</form>
+<script type="text/javascript">
+//<![CDATA[
+var discountForm = new VarienForm('discount-coupon-form');
+discountForm.submit = function (isRemove) {
+    if (isRemove) {
+        $('coupon_code').removeClassName('required-entry');
+        $('remove-coupone').value = "1";
+    } else {
+        $('coupon_code').addClassName('required-entry');
+        $('remove-coupone').value = "0";
+    }
+    return VarienForm.prototype.submit.bind(discountForm)();
+}
+//]]>
+</script>
+</dd>
+                                                                    <dt class="tab-title">Estimate Shipping & Tax</dt>
+                    <dd><div class="shipping">
+    <h2>Estimate Shipping and Tax</h2>
+    <div class="shipping-form">
+       <form action="https://www.waveshare.com/checkout/cart/estimatePost/" method="post" id="shipping-zip-form">
+            <p>Enter your destination to get a shipping estimate.</p>
+            <ul class="form-list">
+                <li>
+                    <label for="country" class="required"><i class="icon-country"></i>Country/Region<em>*</em></label>
+                    <div class="input-box">
+                        <select name="country_id" id="country" class="validate-select" title="Country" ><option value="" > </option><option value="AF" >Afghanistan</option><option value="AX" >Åland Islands</option><option value="AL" >Albania</option><option value="DZ" >Algeria</option><option value="AS" >American Samoa</option><option value="AD" >Andorra</option><option value="AO" >Angola</option><option value="AI" >Anguilla</option><option value="AQ" >Antarctica</option><option value="AG" >Antigua and Barbuda</option><option value="AR" >Argentina</option><option value="AM" >Armenia</option><option value="AW" >Aruba</option><option value="AU" >Australia</option><option value="AT" >Austria</option><option value="AZ" >Azerbaijan</option><option value="BS" >Bahamas</option><option value="BH" >Bahrain</option><option value="BD" >Bangladesh</option><option value="BB" >Barbados</option><option value="BY" >Belarus</option><option value="BE" >Belgium</option><option value="BZ" >Belize</option><option value="BJ" >Benin</option><option value="BM" >Bermuda</option><option value="BT" >Bhutan</option><option value="BO" >Bolivia</option><option value="BA" >Bosnia and Herzegovina</option><option value="BW" >Botswana</option><option value="BV" >Bouvet Island</option><option value="BR" >Brazil</option><option value="IO" >British Indian Ocean Territory</option><option value="VG" >British Virgin Islands</option><option value="BN" >Brunei</option><option value="BG" >Bulgaria</option><option value="BF" >Burkina Faso</option><option value="BI" >Burundi</option><option value="KH" >Cambodia</option><option value="CM" >Cameroon</option><option value="CA" >Canada</option><option value="CV" >Cape Verde</option><option value="KY" >Cayman Islands</option><option value="CF" >Central African Republic</option><option value="TD" >Chad</option><option value="CL" >Chile</option><option value="CN" >China</option><option value="CX" >Christmas Island</option><option value="CC" >Cocos [Keeling] Islands</option><option value="CO" >Colombia</option><option value="KM" >Comoros</option><option value="CG" >Congo - Brazzaville</option><option value="CD" >Congo - Kinshasa</option><option value="CK" >Cook Islands</option><option value="CR" >Costa Rica</option><option value="CI" >Côte d’Ivoire</option><option value="HR" >Croatia</option><option value="CU" >Cuba</option><option value="CY" >Cyprus</option><option value="CZ" >Czech Republic</option><option value="DK" >Denmark</option><option value="DJ" >Djibouti</option><option value="DM" >Dominica</option><option value="DO" >Dominican Republic</option><option value="EC" >Ecuador</option><option value="EG" >Egypt</option><option value="SV" >El Salvador</option><option value="GQ" >Equatorial Guinea</option><option value="ER" >Eritrea</option><option value="EE" >Estonia</option><option value="ET" >Ethiopia</option><option value="FK" >Falkland Islands</option><option value="FO" >Faroe Islands</option><option value="FJ" >Fiji</option><option value="FI" >Finland</option><option value="FR" >France</option><option value="GF" >French Guiana</option><option value="PF" >French Polynesia</option><option value="TF" >French Southern Territories</option><option value="GA" >Gabon</option><option value="GM" >Gambia</option><option value="GE" >Georgia</option><option value="DE" >Germany</option><option value="GH" >Ghana</option><option value="GI" >Gibraltar</option><option value="GR" >Greece</option><option value="GL" >Greenland</option><option value="GD" >Grenada</option><option value="GP" >Guadeloupe</option><option value="GU" >Guam</option><option value="GT" >Guatemala</option><option value="GG" >Guernsey</option><option value="GN" >Guinea</option><option value="GW" >Guinea-Bissau</option><option value="GY" >Guyana</option><option value="HT" >Haiti</option><option value="HM" >Heard Island and McDonald Islands</option><option value="HN" >Honduras</option><option value="HK" >Hong Kong SAR China</option><option value="HU" >Hungary</option><option value="IS" >Iceland</option><option value="IN" >India</option><option value="ID" >Indonesia</option><option value="IR" >Iran</option><option value="IQ" >Iraq</option><option value="IE" >Ireland</option><option value="IM" >Isle of Man</option><option value="IL" >Israel</option><option value="IT" >Italy</option><option value="JM" >Jamaica</option><option value="JP" >Japan</option><option value="JE" >Jersey</option><option value="JO" >Jordan</option><option value="KZ" >Kazakhstan</option><option value="KE" >Kenya</option><option value="KI" >Kiribati</option><option value="KW" >Kuwait</option><option value="KG" >Kyrgyzstan</option><option value="LA" >Laos</option><option value="LV" >Latvia</option><option value="LB" >Lebanon</option><option value="LS" >Lesotho</option><option value="LR" >Liberia</option><option value="LY" >Libya</option><option value="LI" >Liechtenstein</option><option value="LT" >Lithuania</option><option value="LU" >Luxembourg</option><option value="MO" >Macau SAR China</option><option value="MK" >Macedonia</option><option value="MG" >Madagascar</option><option value="MW" >Malawi</option><option value="MY" >Malaysia</option><option value="MV" >Maldives</option><option value="ML" >Mali</option><option value="MT" >Malta</option><option value="MH" >Marshall Islands</option><option value="MQ" >Martinique</option><option value="MR" >Mauritania</option><option value="MU" >Mauritius</option><option value="YT" >Mayotte</option><option value="MX" >Mexico</option><option value="FM" >Micronesia</option><option value="MD" >Moldova</option><option value="MC" >Monaco</option><option value="MN" >Mongolia</option><option value="ME" >Montenegro</option><option value="MS" >Montserrat</option><option value="MA" >Morocco</option><option value="MZ" >Mozambique</option><option value="MM" >Myanmar [Burma]</option><option value="NA" >Namibia</option><option value="NR" >Nauru</option><option value="NP" >Nepal</option><option value="NL" >Netherlands</option><option value="AN" >Netherlands Antilles</option><option value="NC" >New Caledonia</option><option value="NZ" >New Zealand</option><option value="NI" >Nicaragua</option><option value="NE" >Niger</option><option value="NG" >Nigeria</option><option value="NU" >Niue</option><option value="NF" >Norfolk Island</option><option value="MP" >Northern Mariana Islands</option><option value="KP" >North Korea</option><option value="NO" >Norway</option><option value="OM" >Oman</option><option value="PK" >Pakistan</option><option value="PW" >Palau</option><option value="PS" >Palestinian Territories</option><option value="PA" >Panama</option><option value="PG" >Papua New Guinea</option><option value="PY" >Paraguay</option><option value="PE" >Peru</option><option value="PH" >Philippines</option><option value="PN" >Pitcairn Islands</option><option value="PL" >Poland</option><option value="PT" >Portugal</option><option value="PR" >Puerto Rico</option><option value="QA" >Qatar</option><option value="RE" >Réunion</option><option value="RO" >Romania</option><option value="RU" >Russia</option><option value="RW" >Rwanda</option><option value="BL" >Saint Barthélemy</option><option value="SH" >Saint Helena</option><option value="KN" >Saint Kitts and Nevis</option><option value="LC" >Saint Lucia</option><option value="MF" >Saint Martin</option><option value="PM" >Saint Pierre and Miquelon</option><option value="VC" >Saint Vincent and the Grenadines</option><option value="WS" >Samoa</option><option value="SM" >San Marino</option><option value="ST" >São Tomé and Príncipe</option><option value="SA" >Saudi Arabia</option><option value="SN" >Senegal</option><option value="RS" >Serbia</option><option value="SC" >Seychelles</option><option value="SL" >Sierra Leone</option><option value="SG" >Singapore</option><option value="SK" >Slovakia</option><option value="SI" >Slovenia</option><option value="SB" >Solomon Islands</option><option value="SO" >Somalia</option><option value="ZA" >South Africa</option><option value="GS" >South Georgia and the South Sandwich Islands</option><option value="KR" >South Korea</option><option value="ES" >Spain</option><option value="LK" >Sri Lanka</option><option value="SD" >Sudan</option><option value="SR" >Suriname</option><option value="SJ" >Svalbard and Jan Mayen</option><option value="SZ" >Swaziland</option><option value="SE" >Sweden</option><option value="CH" >Switzerland</option><option value="SY" >Syria</option><option value="TW" >Taiwan</option><option value="TJ" >Tajikistan</option><option value="TZ" >Tanzania</option><option value="TH" >Thailand</option><option value="TL" >Timor-Leste</option><option value="TG" >Togo</option><option value="TK" >Tokelau</option><option value="TO" >Tonga</option><option value="TT" >Trinidad and Tobago</option><option value="TN" >Tunisia</option><option value="TR" >Turkey</option><option value="TM" >Turkmenistan</option><option value="TC" >Turks and Caicos Islands</option><option value="TV" >Tuvalu</option><option value="UG" >Uganda</option><option value="UA" >Ukraine</option><option value="AE" >United Arab Emirates</option><option value="GB" >United Kingdom</option><option value="US" selected="selected" >United States</option><option value="UY" >Uruguay</option><option value="UM" >U.S. Minor Outlying Islands</option><option value="VI" >U.S. Virgin Islands</option><option value="UZ" >Uzbekistan</option><option value="VU" >Vanuatu</option><option value="VA" >Vatican City</option><option value="VE" >Venezuela</option><option value="VN" >Vietnam</option><option value="WF" >Wallis and Futuna</option><option value="EH" >Western Sahara</option><option value="YE" >Yemen</option><option value="ZM" >Zambia</option><option value="ZW" >Zimbabwe</option></select>                    </div>
+                </li>
+                            <li>
+                    <label for="region_id"><i class="icon-state"></i>State/Province</label>
+                    <div class="input-box">
+                        <select id="region_id" name="region_id" title="State/Province" style="display:none;">
+                            <option value="">Please select region, state or province</option>
+                        </select>
+                       <script type="text/javascript">
+                       //<![CDATA[
+                           $('region_id').setAttribute('defaultValue',  "");
+                       //]]>
+                       </script>
+                       <input type="text" id="region" name="region" value=""  title="State/Province" class="input-text" style="display:none;" />
+                   </div>
+                </li>
+                                        <li>
+                    <label for="postcode"><i class="icon-zipcode"></i>Zip/Postal Code</label>
+                    <div class="input-box">
+                        <input class="input-text validate-postcode" type="text" id="postcode" name="estimate_postcode" value="" />
+                    </div>
+                </li>
+            </ul>
+            <div class="buttons-set">
+                <button type="button" title="Get a Quote" onclick="coShippingMethodForm.submit()" class="button"><span><span>Get a Quote</span></span></button>
+            </div>
+        </form>
+        <script type="text/javascript">
+        //<![CDATA[
+            new RegionUpdater('country', 'region', 'region_id', {"config":{"show_all_regions":true,"regions_required":["AT","CA","EE","FI","FR","DE","LV","LT","RO","ES","CH","US"]},"LV":{"471":{"code":"\u0100da\u017eu novads","name":"\u0100da\u017eu novads"},"366":{"code":"Aglonas novads","name":"Aglonas novads"},"367":{"code":"LV-AI","name":"Aizkraukles novads"},"368":{"code":"Aizputes novads","name":"Aizputes novads"},"369":{"code":"Akn\u012bstes novads","name":"Akn\u012bstes novads"},"370":{"code":"Alojas novads","name":"Alojas novads"},"371":{"code":"Alsungas novads","name":"Alsungas novads"},"372":{"code":"LV-AL","name":"Al\u016bksnes novads"},"373":{"code":"Amatas novads","name":"Amatas novads"},"374":{"code":"Apes novads","name":"Apes novads"},"375":{"code":"Auces novads","name":"Auces novads"},"376":{"code":"Bab\u012btes novads","name":"Bab\u012btes novads"},"377":{"code":"Baldones novads","name":"Baldones novads"},"378":{"code":"Baltinavas novads","name":"Baltinavas novads"},"379":{"code":"LV-BL","name":"Balvu novads"},"380":{"code":"LV-BU","name":"Bauskas novads"},"381":{"code":"Bever\u012bnas novads","name":"Bever\u012bnas novads"},"382":{"code":"Broc\u0113nu novads","name":"Broc\u0113nu novads"},"383":{"code":"Burtnieku novads","name":"Burtnieku novads"},"384":{"code":"Carnikavas novads","name":"Carnikavas novads"},"387":{"code":"LV-CE","name":"C\u0113su novads"},"385":{"code":"Cesvaines novads","name":"Cesvaines novads"},"386":{"code":"Ciblas novads","name":"Ciblas novads"},"388":{"code":"Dagdas novads","name":"Dagdas novads"},"355":{"code":"LV-DGV","name":"Daugavpils"},"389":{"code":"LV-DA","name":"Daugavpils novads"},"390":{"code":"LV-DO","name":"Dobeles novads"},"391":{"code":"Dundagas novads","name":"Dundagas novads"},"392":{"code":"Durbes novads","name":"Durbes novads"},"393":{"code":"Engures novads","name":"Engures novads"},"472":{"code":"\u0112rg\u013cu novads","name":"\u0112rg\u013cu novads"},"394":{"code":"Garkalnes novads","name":"Garkalnes novads"},"395":{"code":"Grobi\u0146as novads","name":"Grobi\u0146as novads"},"396":{"code":"LV-GU","name":"Gulbenes novads"},"397":{"code":"Iecavas novads","name":"Iecavas novads"},"398":{"code":"Ik\u0161\u0137iles novads","name":"Ik\u0161\u0137iles novads"},"399":{"code":"Il\u016bkstes novads","name":"Il\u016bkstes novads"},"400":{"code":"In\u010dukalna novads","name":"In\u010dukalna novads"},"401":{"code":"Jaunjelgavas novads","name":"Jaunjelgavas novads"},"402":{"code":"Jaunpiebalgas novads","name":"Jaunpiebalgas novads"},"403":{"code":"Jaunpils novads","name":"Jaunpils novads"},"357":{"code":"J\u0113kabpils","name":"J\u0113kabpils"},"405":{"code":"LV-JK","name":"J\u0113kabpils novads"},"356":{"code":"LV-JEL","name":"Jelgava"},"404":{"code":"LV-JL","name":"Jelgavas novads"},"358":{"code":"LV-JUR","name":"J\u016brmala"},"406":{"code":"Kandavas novads","name":"Kandavas novads"},"412":{"code":"K\u0101rsavas novads","name":"K\u0101rsavas novads"},"473":{"code":"\u0136eguma novads","name":"\u0136eguma novads"},"474":{"code":"\u0136ekavas novads","name":"\u0136ekavas novads"},"407":{"code":"Kokneses novads","name":"Kokneses novads"},"410":{"code":"LV-KR","name":"Kr\u0101slavas novads"},"408":{"code":"Krimuldas novads","name":"Krimuldas novads"},"409":{"code":"Krustpils novads","name":"Krustpils novads"},"411":{"code":"LV-KU","name":"Kuld\u012bgas novads"},"413":{"code":"Lielv\u0101rdes novads","name":"Lielv\u0101rdes novads"},"359":{"code":"LV-LPX","name":"Liep\u0101ja"},"360":{"code":"LV-LE","name":"Liep\u0101jas novads"},"417":{"code":"L\u012bgatnes novads","name":"L\u012bgatnes novads"},"414":{"code":"LV-LM","name":"Limba\u017eu novads"},"418":{"code":"L\u012bv\u0101nu novads","name":"L\u012bv\u0101nu novads"},"415":{"code":"Lub\u0101nas novads","name":"Lub\u0101nas novads"},"416":{"code":"LV-LU","name":"Ludzas novads"},"419":{"code":"LV-MA","name":"Madonas novads"},"421":{"code":"M\u0101lpils novads","name":"M\u0101lpils novads"},"422":{"code":"M\u0101rupes novads","name":"M\u0101rupes novads"},"420":{"code":"Mazsalacas novads","name":"Mazsalacas novads"},"423":{"code":"Nauk\u0161\u0113nu novads","name":"Nauk\u0161\u0113nu novads"},"424":{"code":"Neretas novads","name":"Neretas novads"},"425":{"code":"N\u012bcas novads","name":"N\u012bcas novads"},"426":{"code":"LV-OG","name":"Ogres novads"},"427":{"code":"Olaines novads","name":"Olaines novads"},"428":{"code":"Ozolnieku novads","name":"Ozolnieku novads"},"432":{"code":"P\u0101rgaujas novads","name":"P\u0101rgaujas novads"},"433":{"code":"P\u0101vilostas novads","name":"P\u0101vilostas novads"},"434":{"code":"P\u013cavi\u0146u novads","name":"P\u013cavi\u0146u novads"},"429":{"code":"LV-PR","name":"Prei\u013cu novads"},"430":{"code":"Priekules novads","name":"Priekules novads"},"431":{"code":"Prieku\u013cu novads","name":"Prieku\u013cu novads"},"435":{"code":"Raunas novads","name":"Raunas novads"},"361":{"code":"LV-REZ","name":"R\u0113zekne"},"442":{"code":"LV-RE","name":"R\u0113zeknes novads"},"436":{"code":"Riebi\u0146u novads","name":"Riebi\u0146u novads"},"362":{"code":"LV-RIX","name":"R\u012bga"},"363":{"code":"LV-RI","name":"R\u012bgas novads"},"437":{"code":"Rojas novads","name":"Rojas novads"},"438":{"code":"Ropa\u017eu novads","name":"Ropa\u017eu novads"},"439":{"code":"Rucavas novads","name":"Rucavas novads"},"440":{"code":"Rug\u0101ju novads","name":"Rug\u0101ju novads"},"443":{"code":"R\u016bjienas novads","name":"R\u016bjienas novads"},"441":{"code":"Rund\u0101les novads","name":"Rund\u0101les novads"},"444":{"code":"Salacgr\u012bvas novads","name":"Salacgr\u012bvas novads"},"445":{"code":"Salas novads","name":"Salas novads"},"446":{"code":"Salaspils novads","name":"Salaspils novads"},"447":{"code":"LV-SA","name":"Saldus novads"},"448":{"code":"Saulkrastu novads","name":"Saulkrastu novads"},"455":{"code":"S\u0113jas novads","name":"S\u0113jas novads"},"449":{"code":"Siguldas novads","name":"Siguldas novads"},"451":{"code":"Skr\u012bveru novads","name":"Skr\u012bveru novads"},"450":{"code":"Skrundas novads","name":"Skrundas novads"},"452":{"code":"Smiltenes novads","name":"Smiltenes novads"},"453":{"code":"Stopi\u0146u novads","name":"Stopi\u0146u novads"},"454":{"code":"Stren\u010du novads","name":"Stren\u010du novads"},"456":{"code":"LV-TA","name":"Talsu novads"},"458":{"code":"T\u0113rvetes novads","name":"T\u0113rvetes novads"},"457":{"code":"LV-TU","name":"Tukuma novads"},"459":{"code":"Vai\u0146odes novads","name":"Vai\u0146odes novads"},"460":{"code":"LV-VK","name":"Valkas novads"},"364":{"code":"Valmiera","name":"Valmiera"},"461":{"code":"LV-VM","name":"Valmieras novads"},"462":{"code":"Varak\u013c\u0101nu novads","name":"Varak\u013c\u0101nu novads"},"469":{"code":"V\u0101rkavas novads","name":"V\u0101rkavas novads"},"463":{"code":"Vecpiebalgas novads","name":"Vecpiebalgas novads"},"464":{"code":"Vecumnieku novads","name":"Vecumnieku novads"},"365":{"code":"LV-VEN","name":"Ventspils"},"465":{"code":"LV-VE","name":"Ventspils novads"},"466":{"code":"Vies\u012btes novads","name":"Vies\u012btes novads"},"467":{"code":"Vi\u013cakas novads","name":"Vi\u013cakas novads"},"468":{"code":"Vi\u013c\u0101nu novads","name":"Vi\u013c\u0101nu novads"},"470":{"code":"Zilupes novads","name":"Zilupes novads"}},"FI":{"339":{"code":"Ahvenanmaa","name":"Ahvenanmaa"},"333":{"code":"Etel\u00e4-Karjala","name":"Etel\u00e4-Karjala"},"326":{"code":"Etel\u00e4-Pohjanmaa","name":"Etel\u00e4-Pohjanmaa"},"325":{"code":"Etel\u00e4-Savo","name":"Etel\u00e4-Savo"},"337":{"code":"It\u00e4-Uusimaa","name":"It\u00e4-Uusimaa"},"322":{"code":"Kainuu","name":"Kainuu"},"335":{"code":"Kanta-H\u00e4me","name":"Kanta-H\u00e4me"},"330":{"code":"Keski-Pohjanmaa","name":"Keski-Pohjanmaa"},"331":{"code":"Keski-Suomi","name":"Keski-Suomi"},"338":{"code":"Kymenlaakso","name":"Kymenlaakso"},"320":{"code":"Lappi","name":"Lappi"},"334":{"code":"P\u00e4ij\u00e4t-H\u00e4me","name":"P\u00e4ij\u00e4t-H\u00e4me"},"328":{"code":"Pirkanmaa","name":"Pirkanmaa"},"327":{"code":"Pohjanmaa","name":"Pohjanmaa"},"323":{"code":"Pohjois-Karjala","name":"Pohjois-Karjala"},"321":{"code":"Pohjois-Pohjanmaa","name":"Pohjois-Pohjanmaa"},"324":{"code":"Pohjois-Savo","name":"Pohjois-Savo"},"329":{"code":"Satakunta","name":"Satakunta"},"336":{"code":"Uusimaa","name":"Uusimaa"},"332":{"code":"Varsinais-Suomi","name":"Varsinais-Suomi"}},"LT":{"475":{"code":"LT-AL","name":"Alytaus Apskritis"},"476":{"code":"LT-KU","name":"Kauno Apskritis"},"477":{"code":"LT-KL","name":"Klaip\u0117dos Apskritis"},"478":{"code":"LT-MR","name":"Marijampol\u0117s Apskritis"},"479":{"code":"LT-PN","name":"Panev\u0117\u017eio Apskritis"},"480":{"code":"LT-SA","name":"\u0160iauli\u0173 Apskritis"},"481":{"code":"LT-TA","name":"Taurag\u0117s Apskritis"},"482":{"code":"LT-TE","name":"Tel\u0161i\u0173 Apskritis"},"483":{"code":"LT-UT","name":"Utenos Apskritis"},"484":{"code":"LT-VL","name":"Vilniaus Apskritis"}},"EE":{"340":{"code":"EE-37","name":"Harjumaa"},"341":{"code":"EE-39","name":"Hiiumaa"},"342":{"code":"EE-44","name":"Ida-Virumaa"},"344":{"code":"EE-51","name":"J\u00e4rvamaa"},"343":{"code":"EE-49","name":"J\u00f5gevamaa"},"346":{"code":"EE-59","name":"L\u00e4\u00e4ne-Virumaa"},"345":{"code":"EE-57","name":"L\u00e4\u00e4nemaa"},"348":{"code":"EE-67","name":"P\u00e4rnumaa"},"347":{"code":"EE-65","name":"P\u00f5lvamaa"},"349":{"code":"EE-70","name":"Raplamaa"},"350":{"code":"EE-74","name":"Saaremaa"},"351":{"code":"EE-78","name":"Tartumaa"},"352":{"code":"EE-82","name":"Valgamaa"},"353":{"code":"EE-84","name":"Viljandimaa"},"354":{"code":"EE-86","name":"V\u00f5rumaa"}},"ES":{"130":{"code":"A Coru\u0441a","name":"A Coru\u00f1a"},"131":{"code":"Alava","name":"Alava"},"132":{"code":"Albacete","name":"Albacete"},"133":{"code":"Alicante","name":"Alicante"},"134":{"code":"Almeria","name":"Almeria"},"135":{"code":"Asturias","name":"Asturias"},"136":{"code":"Avila","name":"Avila"},"137":{"code":"Badajoz","name":"Badajoz"},"138":{"code":"Baleares","name":"Baleares"},"139":{"code":"Barcelona","name":"Barcelona"},"140":{"code":"Burgos","name":"Burgos"},"141":{"code":"Caceres","name":"Caceres"},"142":{"code":"Cadiz","name":"Cadiz"},"143":{"code":"Cantabria","name":"Cantabria"},"144":{"code":"Castellon","name":"Castellon"},"145":{"code":"Ceuta","name":"Ceuta"},"146":{"code":"Ciudad Real","name":"Ciudad Real"},"147":{"code":"Cordoba","name":"Cordoba"},"148":{"code":"Cuenca","name":"Cuenca"},"149":{"code":"Girona","name":"Girona"},"150":{"code":"Granada","name":"Granada"},"151":{"code":"Guadalajara","name":"Guadalajara"},"152":{"code":"Guipuzcoa","name":"Guipuzcoa"},"153":{"code":"Huelva","name":"Huelva"},"154":{"code":"Huesca","name":"Huesca"},"155":{"code":"Jaen","name":"Jaen"},"156":{"code":"La Rioja","name":"La Rioja"},"157":{"code":"Las Palmas","name":"Las Palmas"},"158":{"code":"Leon","name":"Leon"},"159":{"code":"Lleida","name":"Lleida"},"160":{"code":"Lugo","name":"Lugo"},"161":{"code":"Madrid","name":"Madrid"},"162":{"code":"Malaga","name":"Malaga"},"163":{"code":"Melilla","name":"Melilla"},"164":{"code":"Murcia","name":"Murcia"},"165":{"code":"Navarra","name":"Navarra"},"166":{"code":"Ourense","name":"Ourense"},"167":{"code":"Palencia","name":"Palencia"},"168":{"code":"Pontevedra","name":"Pontevedra"},"169":{"code":"Salamanca","name":"Salamanca"},"170":{"code":"Santa Cruz de Tenerife","name":"Santa Cruz de Tenerife"},"171":{"code":"Segovia","name":"Segovia"},"172":{"code":"Sevilla","name":"Sevilla"},"173":{"code":"Soria","name":"Soria"},"174":{"code":"Tarragona","name":"Tarragona"},"175":{"code":"Teruel","name":"Teruel"},"176":{"code":"Toledo","name":"Toledo"},"177":{"code":"Valencia","name":"Valencia"},"178":{"code":"Valladolid","name":"Valladolid"},"179":{"code":"Vizcaya","name":"Vizcaya"},"180":{"code":"Zamora","name":"Zamora"},"181":{"code":"Zaragoza","name":"Zaragoza"}},"CH":{"104":{"code":"AG","name":"Aargau"},"106":{"code":"AR","name":"Appenzell Ausserrhoden"},"105":{"code":"AI","name":"Appenzell Innerrhoden"},"108":{"code":"BL","name":"Basel-Landschaft"},"109":{"code":"BS","name":"Basel-Stadt"},"107":{"code":"BE","name":"Bern"},"110":{"code":"FR","name":"Freiburg"},"111":{"code":"GE","name":"Genf"},"112":{"code":"GL","name":"Glarus"},"113":{"code":"GR","name":"Graub\u00fcnden"},"114":{"code":"JU","name":"Jura"},"115":{"code":"LU","name":"Luzern"},"116":{"code":"NE","name":"Neuenburg"},"117":{"code":"NW","name":"Nidwalden"},"118":{"code":"OW","name":"Obwalden"},"120":{"code":"SH","name":"Schaffhausen"},"122":{"code":"SZ","name":"Schwyz"},"121":{"code":"SO","name":"Solothurn"},"119":{"code":"SG","name":"St. Gallen"},"124":{"code":"TI","name":"Tessin"},"123":{"code":"TG","name":"Thurgau"},"125":{"code":"UR","name":"Uri"},"126":{"code":"VD","name":"Waadt"},"127":{"code":"VS","name":"Wallis"},"128":{"code":"ZG","name":"Zug"},"129":{"code":"ZH","name":"Z\u00fcrich"}},"FR":{"182":{"code":"01","name":"Ain"},"183":{"code":"02","name":"Aisne"},"184":{"code":"03","name":"Allier"},"185":{"code":"04","name":"Alpes-de-Haute-Provence"},"187":{"code":"06","name":"Alpes-Maritimes"},"188":{"code":"07","name":"Ard\u00e8che"},"189":{"code":"08","name":"Ardennes"},"190":{"code":"09","name":"Ari\u00e8ge"},"191":{"code":"10","name":"Aube"},"192":{"code":"11","name":"Aude"},"193":{"code":"12","name":"Aveyron"},"249":{"code":"67","name":"Bas-Rhin"},"194":{"code":"13","name":"Bouches-du-Rh\u00f4ne"},"195":{"code":"14","name":"Calvados"},"196":{"code":"15","name":"Cantal"},"197":{"code":"16","name":"Charente"},"198":{"code":"17","name":"Charente-Maritime"},"199":{"code":"18","name":"Cher"},"200":{"code":"19","name":"Corr\u00e8ze"},"201":{"code":"2A","name":"Corse-du-Sud"},"203":{"code":"21","name":"C\u00f4te-d'Or"},"204":{"code":"22","name":"C\u00f4tes-d'Armor"},"205":{"code":"23","name":"Creuse"},"261":{"code":"79","name":"Deux-S\u00e8vres"},"206":{"code":"24","name":"Dordogne"},"207":{"code":"25","name":"Doubs"},"208":{"code":"26","name":"Dr\u00f4me"},"273":{"code":"91","name":"Essonne"},"209":{"code":"27","name":"Eure"},"210":{"code":"28","name":"Eure-et-Loir"},"211":{"code":"29","name":"Finist\u00e8re"},"212":{"code":"30","name":"Gard"},"214":{"code":"32","name":"Gers"},"215":{"code":"33","name":"Gironde"},"250":{"code":"68","name":"Haut-Rhin"},"202":{"code":"2B","name":"Haute-Corse"},"213":{"code":"31","name":"Haute-Garonne"},"225":{"code":"43","name":"Haute-Loire"},"234":{"code":"52","name":"Haute-Marne"},"252":{"code":"70","name":"Haute-Sa\u00f4ne"},"256":{"code":"74","name":"Haute-Savoie"},"269":{"code":"87","name":"Haute-Vienne"},"186":{"code":"05","name":"Hautes-Alpes"},"247":{"code":"65","name":"Hautes-Pyr\u00e9n\u00e9es"},"274":{"code":"92","name":"Hauts-de-Seine"},"216":{"code":"34","name":"H\u00e9rault"},"217":{"code":"35","name":"Ille-et-Vilaine"},"218":{"code":"36","name":"Indre"},"219":{"code":"37","name":"Indre-et-Loire"},"220":{"code":"38","name":"Is\u00e8re"},"221":{"code":"39","name":"Jura"},"222":{"code":"40","name":"Landes"},"223":{"code":"41","name":"Loir-et-Cher"},"224":{"code":"42","name":"Loire"},"226":{"code":"44","name":"Loire-Atlantique"},"227":{"code":"45","name":"Loiret"},"228":{"code":"46","name":"Lot"},"229":{"code":"47","name":"Lot-et-Garonne"},"230":{"code":"48","name":"Loz\u00e8re"},"231":{"code":"49","name":"Maine-et-Loire"},"232":{"code":"50","name":"Manche"},"233":{"code":"51","name":"Marne"},"235":{"code":"53","name":"Mayenne"},"236":{"code":"54","name":"Meurthe-et-Moselle"},"237":{"code":"55","name":"Meuse"},"238":{"code":"56","name":"Morbihan"},"239":{"code":"57","name":"Moselle"},"240":{"code":"58","name":"Ni\u00e8vre"},"241":{"code":"59","name":"Nord"},"242":{"code":"60","name":"Oise"},"243":{"code":"61","name":"Orne"},"257":{"code":"75","name":"Paris"},"244":{"code":"62","name":"Pas-de-Calais"},"245":{"code":"63","name":"Puy-de-D\u00f4me"},"246":{"code":"64","name":"Pyr\u00e9n\u00e9es-Atlantiques"},"248":{"code":"66","name":"Pyr\u00e9n\u00e9es-Orientales"},"251":{"code":"69","name":"Rh\u00f4ne"},"253":{"code":"71","name":"Sa\u00f4ne-et-Loire"},"254":{"code":"72","name":"Sarthe"},"255":{"code":"73","name":"Savoie"},"259":{"code":"77","name":"Seine-et-Marne"},"258":{"code":"76","name":"Seine-Maritime"},"275":{"code":"93","name":"Seine-Saint-Denis"},"262":{"code":"80","name":"Somme"},"263":{"code":"81","name":"Tarn"},"264":{"code":"82","name":"Tarn-et-Garonne"},"272":{"code":"90","name":"Territoire-de-Belfort"},"277":{"code":"95","name":"Val-d'Oise"},"276":{"code":"94","name":"Val-de-Marne"},"265":{"code":"83","name":"Var"},"266":{"code":"84","name":"Vaucluse"},"267":{"code":"85","name":"Vend\u00e9e"},"268":{"code":"86","name":"Vienne"},"270":{"code":"88","name":"Vosges"},"271":{"code":"89","name":"Yonne"},"260":{"code":"78","name":"Yvelines"}},"US":{"1":{"code":"AL","name":"Alabama"},"2":{"code":"AK","name":"Alaska"},"3":{"code":"AS","name":"American Samoa"},"4":{"code":"AZ","name":"Arizona"},"5":{"code":"AR","name":"Arkansas"},"6":{"code":"AE","name":"Armed Forces Africa"},"7":{"code":"AA","name":"Armed Forces Americas"},"8":{"code":"AE","name":"Armed Forces Canada"},"9":{"code":"AE","name":"Armed Forces Europe"},"10":{"code":"AE","name":"Armed Forces Middle East"},"11":{"code":"AP","name":"Armed Forces Pacific"},"12":{"code":"CA","name":"California"},"13":{"code":"CO","name":"Colorado"},"14":{"code":"CT","name":"Connecticut"},"15":{"code":"DE","name":"Delaware"},"16":{"code":"DC","name":"District of Columbia"},"17":{"code":"FM","name":"Federated States Of Micronesia"},"18":{"code":"FL","name":"Florida"},"19":{"code":"GA","name":"Georgia"},"20":{"code":"GU","name":"Guam"},"21":{"code":"HI","name":"Hawaii"},"22":{"code":"ID","name":"Idaho"},"23":{"code":"IL","name":"Illinois"},"24":{"code":"IN","name":"Indiana"},"25":{"code":"IA","name":"Iowa"},"26":{"code":"KS","name":"Kansas"},"27":{"code":"KY","name":"Kentucky"},"28":{"code":"LA","name":"Louisiana"},"29":{"code":"ME","name":"Maine"},"30":{"code":"MH","name":"Marshall Islands"},"31":{"code":"MD","name":"Maryland"},"32":{"code":"MA","name":"Massachusetts"},"33":{"code":"MI","name":"Michigan"},"34":{"code":"MN","name":"Minnesota"},"35":{"code":"MS","name":"Mississippi"},"36":{"code":"MO","name":"Missouri"},"37":{"code":"MT","name":"Montana"},"38":{"code":"NE","name":"Nebraska"},"39":{"code":"NV","name":"Nevada"},"40":{"code":"NH","name":"New Hampshire"},"41":{"code":"NJ","name":"New Jersey"},"42":{"code":"NM","name":"New Mexico"},"43":{"code":"NY","name":"New York"},"44":{"code":"NC","name":"North Carolina"},"45":{"code":"ND","name":"North Dakota"},"46":{"code":"MP","name":"Northern Mariana Islands"},"47":{"code":"OH","name":"Ohio"},"48":{"code":"OK","name":"Oklahoma"},"49":{"code":"OR","name":"Oregon"},"50":{"code":"PW","name":"Palau"},"51":{"code":"PA","name":"Pennsylvania"},"52":{"code":"PR","name":"Puerto Rico"},"53":{"code":"RI","name":"Rhode Island"},"54":{"code":"SC","name":"South Carolina"},"55":{"code":"SD","name":"South Dakota"},"56":{"code":"TN","name":"Tennessee"},"57":{"code":"TX","name":"Texas"},"58":{"code":"UT","name":"Utah"},"59":{"code":"VT","name":"Vermont"},"60":{"code":"VI","name":"Virgin Islands"},"61":{"code":"VA","name":"Virginia"},"62":{"code":"WA","name":"Washington"},"63":{"code":"WV","name":"West Virginia"},"64":{"code":"WI","name":"Wisconsin"},"65":{"code":"WY","name":"Wyoming"}},"RO":{"278":{"code":"AB","name":"Alba"},"279":{"code":"AR","name":"Arad"},"280":{"code":"AG","name":"Arge\u015f"},"281":{"code":"BC","name":"Bac\u0103u"},"282":{"code":"BH","name":"Bihor"},"283":{"code":"BN","name":"Bistri\u0163a-N\u0103s\u0103ud"},"284":{"code":"BT","name":"Boto\u015fani"},"286":{"code":"BR","name":"Br\u0103ila"},"285":{"code":"BV","name":"Bra\u015fov"},"287":{"code":"B","name":"Bucure\u015fti"},"288":{"code":"BZ","name":"Buz\u0103u"},"290":{"code":"CL","name":"C\u0103l\u0103ra\u015fi"},"289":{"code":"CS","name":"Cara\u015f-Severin"},"291":{"code":"CJ","name":"Cluj"},"292":{"code":"CT","name":"Constan\u0163a"},"293":{"code":"CV","name":"Covasna"},"294":{"code":"DB","name":"D\u00e2mbovi\u0163a"},"295":{"code":"DJ","name":"Dolj"},"296":{"code":"GL","name":"Gala\u0163i"},"297":{"code":"GR","name":"Giurgiu"},"298":{"code":"GJ","name":"Gorj"},"299":{"code":"HR","name":"Harghita"},"300":{"code":"HD","name":"Hunedoara"},"301":{"code":"IL","name":"Ialomi\u0163a"},"302":{"code":"IS","name":"Ia\u015fi"},"303":{"code":"IF","name":"Ilfov"},"304":{"code":"MM","name":"Maramure\u015f"},"305":{"code":"MH","name":"Mehedin\u0163i"},"306":{"code":"MS","name":"Mure\u015f"},"307":{"code":"NT","name":"Neam\u0163"},"308":{"code":"OT","name":"Olt"},"309":{"code":"PH","name":"Prahova"},"311":{"code":"SJ","name":"S\u0103laj"},"310":{"code":"SM","name":"Satu-Mare"},"312":{"code":"SB","name":"Sibiu"},"313":{"code":"SV","name":"Suceava"},"314":{"code":"TR","name":"Teleorman"},"315":{"code":"TM","name":"Timi\u015f"},"316":{"code":"TL","name":"Tulcea"},"318":{"code":"VL","name":"V\u00e2lcea"},"317":{"code":"VS","name":"Vaslui"},"319":{"code":"VN","name":"Vrancea"}},"CA":{"66":{"code":"AB","name":"Alberta"},"67":{"code":"BC","name":"British Columbia"},"68":{"code":"MB","name":"Manitoba"},"70":{"code":"NB","name":"New Brunswick"},"69":{"code":"NL","name":"Newfoundland and Labrador"},"72":{"code":"NT","name":"Northwest Territories"},"71":{"code":"NS","name":"Nova Scotia"},"73":{"code":"NU","name":"Nunavut"},"74":{"code":"ON","name":"Ontario"},"75":{"code":"PE","name":"Prince Edward Island"},"76":{"code":"QC","name":"Quebec"},"77":{"code":"SK","name":"Saskatchewan"},"78":{"code":"YT","name":"Yukon Territory"}},"DE":{"80":{"code":"BAW","name":"Baden-W\u00fcrttemberg"},"81":{"code":"BAY","name":"Bayern"},"82":{"code":"BER","name":"Berlin"},"83":{"code":"BRG","name":"Brandenburg"},"84":{"code":"BRE","name":"Bremen"},"85":{"code":"HAM","name":"Hamburg"},"86":{"code":"HES","name":"Hessen"},"87":{"code":"MEC","name":"Mecklenburg-Vorpommern"},"79":{"code":"NDS","name":"Niedersachsen"},"88":{"code":"NRW","name":"Nordrhein-Westfalen"},"89":{"code":"RHE","name":"Rheinland-Pfalz"},"90":{"code":"SAR","name":"Saarland"},"91":{"code":"SAS","name":"Sachsen"},"92":{"code":"SAC","name":"Sachsen-Anhalt"},"93":{"code":"SCN","name":"Schleswig-Holstein"},"94":{"code":"THE","name":"Th\u00fcringen"}},"AT":{"102":{"code":"BL","name":"Burgenland"},"99":{"code":"KN","name":"K\u00e4rnten"},"96":{"code":"NO","name":"Nieder\u00f6sterreich"},"97":{"code":"OO","name":"Ober\u00f6sterreich"},"98":{"code":"SB","name":"Salzburg"},"100":{"code":"ST","name":"Steiermark"},"101":{"code":"TI","name":"Tirol"},"103":{"code":"VB","name":"Voralberg"},"95":{"code":"WI","name":"Wien"}}});
+        //]]>
+        </script>
+
+                <script type="text/javascript">
+        //<![CDATA[
+            var coShippingMethodForm = new VarienForm('shipping-zip-form');
+            var countriesWithOptionalZip = ["HK","IE","MO","PA"];
+
+            coShippingMethodForm.submit = function () {
+                var country = $F('country');
+                var optionalZip = false;
+
+                for (i=0; i < countriesWithOptionalZip.length; i++) {
+                    if (countriesWithOptionalZip[i] == country) {
+                        optionalZip = true;
+                    }
+                }
+                if (optionalZip) {
+                    $('postcode').removeClassName('required-entry');
+                }
+                else {
+                    $('postcode').addClassName('required-entry');
+                }
+                return VarienForm.prototype.submit.bind(coShippingMethodForm)();
+            }
+        //]]>
+        </script>
+    </div>
+</div>
+</dd>
+                            </dl>-->
+            <dl id="cart-tabs" class="cart-tabs-inner waveshare_quick_add"> <!--add by libearxiong 20170315-->
+                <div class="waveshare_quick_add_title"><strong>Quick Add</strong></div>
+                <form action="/checkout/cart/addproductfromfile" enctype="multipart/form-data" method="post" style="display:inline;">
+                    <div id="waveshare_cart_quick_add_div">
+                        Upload a CSV file which holds <strong>SKU, Quantity</strong> below.
+                        <p>(just data, no column headers, <a href="/media/addproductfromfile/example/waveshare_quick_add.csv" target="_blank">download template file</a>)</p>
+                        <p>
+                            <p><input type="file" size="20" name="fileToUpload" class="fileToUpload input"></p>
+                            <input name="form_key" value="nW4tYQ6qyG5ihLC0" type="hidden">
+                            <button type="submit" title="Add to Cart" class="buttonUpload button btn-cart"><span><span>Add to Cart</span></span></button>
+                        </p>
+                    </div>
+                </form>
+            </dl>
+        </div>
+        <div class="cart-totals col-sm-5">
+            <div class="totals">
+                    <table id="shopping-cart-totals-table" class="data-table">
+        <col />
+        <col width="1" />
+        <tfoot>
+            <tr class="grand-total">
+    <td style="" class="a-right" colspan="1">
+        <strong>Grand Total</strong>
+    </td>
+    <td style="" class="a-right total-price">
+        <strong><span class="price">€85.48</span></strong>
+    </td>
+</tr>
+        </tfoot>
+        <tbody>
+            <tr>
+            <td class="a-right">
+            TOTAL QTY
+            </td>
+            <td class="a-right">
+            6            </td>
+            </tr>
+            <td class="a-right">
+            TOTAL WEIGHT
+            </td>
+            <td class="a-right">
+            1.218 kg
+            </td>
+            </tr>
+            <tr>
+    <td style="" class="a-right" colspan="1">
+        Subtotal    </td>
+    <td style="" class="a-right">
+        <span class="price">€85.48</span>    </td>
+</tr>
+                        <tr>
+            <td class="a-right">
+            Shipping Freight
+            </td>
+            <td class="a-right">
+            TBD
+            </td>
+            </tr>
+                        
+        </tbody>
+    </table>
+    <!--modify by libearxiong 20170315-->
+    Notice: The shipping freight is to be determined.                                <div class="clearfix">
+                    <!--add by libearxiong 20170107-->
+                    <!--<a id="waveshare_cart_quick_add" href="javascript:void(0);" title="Quick Add">Quick Add</a>
+                    <form action="/checkout/cart/addproductfromfile" enctype="multipart/form-data" method="post" style="display:inline;">
+                        <div id="waveshare_cart_quick_add_div" style="display:none;">
+                            Upload a CSV file which holds <strong>SKU, Quantity</strong> (just data, no column headers) below.
+                            <p>
+                                <p><input type="file" size="20" name="fileToUpload" class="fileToUpload input"></p>
+                                <input name="form_key" value="nW4tYQ6qyG5ihLC0" type="hidden">
+                                <button type="submit" title="Add to Cart" class="buttonUpload button btn-cart"><span><span>Add to Cart</span></span></button>
+                            </p>
+                        </div>
+                    </form>-->
+                    
+                    <ul class="checkout-types">
+                                                                                                                                                                                                        <li><button type="button" title="Proceed to Checkout" class="button button-inverse btn-lg btn-large btn-proceed-checkout btn-checkout" onclick="window.location='https://www.waveshare.com/onepagecheckout/';"><span><span>Checkout</span></span></button>
+
+</li>
+                                                                </ul>
+                </div>
+                            </div>
+        </div>
+    </div>
+        <script type="text/javascript">
+    //<![CDATA[
+    jQuery(function($) {
+        var venedor_ctabs_timer;
+        var ctabs_width = 0;
+        $('#cart-tabs > dt').click(function() {
+            old_tab = $('#cart-tabs > dt.open').attr('id');
+            f = false;
+            if ($(this).hasClass('open'))
+                f = true;
+            w = $(window).width();
+            if (f && w == ctabs_width)
+                return;
+            ctabs_width = w;
+            $parent = $(this).parent();
+            $parent.find('> dt').removeClass('open');
+            $parent.find('> dd').stop().hide();
+            $(this).next().stop().show();
+            
+            $self = $(this);
+            $self.addClass('open');
+            $cur = $self.next();
+            $parent.stop().css('height', 'auto');
+            $cur.css('bottom', 'auto');
+            h = $parent.outerHeight();
+            c = $cur.outerHeight() + 3;
+            if (c > h) {
+                $parent.css({'height': c + 'px'});
+                $parent.find('> dt').last().css('border-bottom-width', '1px');
+            } else {
+                $cur.css('bottom', '0');
+                $parent.find('> dt').last().css('border-bottom-width', '0');
+            }
+        });
+        
+        function venedor_ctabs_resize() {
+            $('#cart-tabs > dt.open').click();
+            if (venedor_ctabs_timer) clearTimeout(venedor_ctabs_timer);
+        }
+        
+        $(window).resize(function() {
+            clearTimeout(venedor_ctabs_timer);
+            venedor_ctabs_timer = setTimeout(venedor_ctabs_resize, 200); 
+        });
+        
+        setTimeout(function() {
+            if ($('#cart-tabs > dt.active').length)
+                $('#cart-tabs > dt.active').first().click();
+            else
+                $('#cart-tabs > dt').first().click();
+        }, 800);
+    });
+    /*add by libearxiong 20170107*/
+    jQuery("#waveshare_cart_quick_add").unbind("click").click(function(){
+        if(jQuery("#waveshare_cart_quick_add_div").is(":hidden")){
+            jQuery("#waveshare_cart_quick_add_div").show();
+        } else {
+            jQuery("#waveshare_cart_quick_add_div").hide();
+        }
+    })
+    //]]>    
+    </script>
+</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-container">
+                <div class="footer">
+                                <div class="footer-up">
+        <div class="container">
+            <div class="row ws-advantage d-flex justify-content-between">
+                <div>
+                    <div class="advantage-img advantage-img-1"></div>
+                    <p>15 Days Returnable</p>
+                </div>
+                <div>
+                    <div class="advantage-img advantage-img-2"></div>
+                    <p>12 Months Warranty</p>
+                </div>
+                <div>
+                    <div class="advantage-img advantage-img-3"></div>
+                    <p>Trustworthy Brand</p>
+                </div>
+                <div>
+                    <div class="advantage-img advantage-img-4"></div>
+                    <p>Discount for Large Quantity</p>
+                </div>
+                <div>
+                    <div class="advantage-img advantage-img-5"></div>
+                    <p>Worldwide Shipping</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-top">
+                <div class="container">
+            <div class="row">
+                                <div class="waveshare-col-sm-3 col-md-3 col-sm-4 footer_column footer-column-1"> <!-- col-sm-4 -->
+                    <h3 class="title">INFO & SERVICES</h3>                    <ul>
+<li><a href="https://www.waveshare.com/about_us">About Us</a></li>
+<li><a href="https://www.waveshare.com/contact_us">Contact Us</a></li>
+<li><a href="https://www.waveshare.com/distributors">Distributors</a></li>
+<li><a href="/customization.html">Customization</a></li>
+</ul>                </div>
+                                <div class="waveshare-col-sm-3 col-md-3 col-sm-4 footer_column footer-column-2"> <!-- col-sm-4 -->
+                    <h3 class="title">HELP</h3>                    <ul>
+<li><a href="https://www.waveshare.com/payment">Payment</a></li>
+<li><a href="https://www.waveshare.com/shipping">Shipping</a></li>
+<li><a href="https://www.waveshare.com/warranty_returns">Warranty &amp; Returns</a></li>
+<li><a href="https://www.waveshare.com/privacy_policy">Privacy Policy</a></li>
+<li><a href="https://service.waveshare.com/">Tech Support</a></li>
+</ul>                </div>
+                                <div class="waveshare-col-sm-3 col-md-3 col-sm-4 footer_column footer-column-3"> <!-- col-sm-4 -->
+                    <h3 class="title">LINKS</h3>                    <ul>
+<li><a href="https://www.waveshare.com/catalog/seo_sitemap/category/">Product Categories</a></li>
+<li><a href="https://www.waveshare.com/catalogsearch/advanced/">Advanced Search</a></li>
+<li><a href="/wiki">WIKI</a></li>
+</ul>                </div>
+                                <div class="clearfix visible-sm"></div>
+                <div id="waveshare_newsletter" class="waveshare-col-sm-4 col-md-3 footer_column footer-column-4 col-sm-12">
+                    <h3 class="title">BE THE FIRST TO KNOW</h3>
+                    <p><!-- modify by libearxiong 20180113 -->
+    <div>
+        <span>Get all the latest information, subscribe now.</span>
+    </div>
+    <form action="https://www.waveshare.com/newsletter/subscriber/new/" method="post" id="footer-newsletter-validate-detail">
+        <div class="block-content">
+            <div class="input-box">
+               <input type="text" name="email" id="newsletter" title="Sign up for our newsletter" class="input-text required-entry validate-email"  placeholder="Enter your email address" />
+            <!--</div>
+            <div class="actions">-->
+                <button type="submit" title="SUBMIT" class="button btn-lg btn-large"><span><span>SUBMIT</span></span></button>
+            </div>
+        </div>
+    </form>
+    <script type="text/javascript">
+    //<![CDATA[
+        var newsletterSubscriberFormDetail = new VarienForm('footer-newsletter-validate-detail');
+    //]]>
+    </script>
+<!--</div>-->
+</p>
+                    <a href="https://www.youtube.com/channel/UCV_48_r0rplaYB-VqxXB04g/videos" target="_blank" rel="nofollow noopener noreferrer">
+                        <img width="30px" height="30px" src="/skin/frontend/venedor/default/images/icons/waveshare/youtube.svg"/>
+                    </a>
+                    <!--<a href="https://www.facebook.com/Waveshare1" target="_blank" rel="nofollow noopener noreferrer">
+                        <img width="30px" height="30px" src="/skin/frontend/venedor/default/images/icons/waveshare/facebook.svg"/>
+                    </a>-->
+                    <a href="https://twitter.com/waveshare00" target="_blank" rel="nofollow noopener noreferrer">
+                        <img width="30px" height="30px" src="/skin/frontend/venedor/default/images/icons/waveshare/twitter.svg"/>
+                    </a>
+                    <!--<a href="https://wavesharejfs.blogspot.com" target="_blank" rel="nofollow noopener noreferrer">
+                        <img width="30px" height="30px" src="/skin/frontend/venedor/default/images/icons/waveshare/blogspot.svg"/>
+                    </a>-->
+                    <a href="https://www.instagram.com/waveshareelectronics" target="_blank" rel="nofollow noopener noreferrer">
+                        <img width="30px" height="30px" src="/skin/frontend/venedor/default/images/icons/waveshare/instagram.svg"/>
+                    </a>
+                    <a href="https://www.tiktok.com/@waveshareelectronics" target="_blank" rel="nofollow noopener noreferrer">
+                        <img width="30px" height="30px" src="/skin/frontend/venedor/default/images/icons/waveshare/tiktok.svg"/>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="container">
+            <!--<div class="row">
+                <div class="col-sm-7 social-links">
+                                    </div>
+                <div class="col-sm-5 copyright">
+                    <address></address>
+                                        
+                </div>
+            </div> -->
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="/img/banner/payment.svg" alt="logo about paypal, mastercard, visa and American Express">
+                </div>
+                <div class="col-md-6"><p>Copyright &copy; 2025 Waveshare International Limited. All Rights Reserved. </p></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- TODO: 测试聊天工具 -->
+<!--<script type="text/javascript" src="https://www.waveshare.com/js/eternal/jquery/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="https://static.waveshare.com/wtpkg/ws-chat.js"></script>-->
+<script type="text/javascript">
+//<![CDATA[
+jQuery(function($) {
+    
+    var venedor_sidebar_timer;
+    
+    function venedor_sidebar_resize() {
+        if (VENEDOR_RESPONSIVE) {
+            var winWidth = $(window).innerWidth();
+
+            if (winWidth > 750 && ((!$('body').hasClass('bv3') && winWidth < 963) || ($('body').hasClass('bv3') && winWidth < 975))) {
+                                if ($('.sidebar').hasClass('col-sm-3')) {
+                    $('.sidebar').removeClass('col-sm-3');
+                    $('.sidebar').addClass('col-sm-4');
+                    $('.main-content').removeClass('col-sm-9');
+                    $('.main-content').addClass('col-sm-8');
+                    venedor_resize();
+                }                
+            } else {
+                                if ($('.sidebar').hasClass('col-sm-4')) {
+                    $('.sidebar').removeClass('col-sm-4');
+                    $('.sidebar').addClass('col-sm-3');
+                    $('.main-content').removeClass('col-sm-8');
+                    $('.main-content').addClass('col-sm-9');
+                    venedor_resize();
+                }
+            }
+        }
+        if (venedor_sidebar_timer) clearTimeout(venedor_sidebar_timer);
+    }
+
+    $(window).load(venedor_sidebar_resize);
+    
+    $(window).resize(function() { 
+        clearTimeout(venedor_sidebar_timer); 
+        venedor_sidebar_timer = setTimeout(venedor_sidebar_resize, 200); 
+    });
+    
+    var venedor_timer;
+    
+    function venedor_resize() {
+        $('.subtitle .line').each(function() {
+            w = $(this).prev().width();
+            $(this).css('left', (w + 30) + 'px');
+        });
+        if (VENEDOR_RESPONSIVE) {
+            var winWidth = $(window).innerWidth();
+            if ($('.flexslider').length) {
+                $('.flexslider').each(function() {
+                    var $slider = $(this).data('flexslider');
+                    if ($slider) {
+                        break_default = $slider.data('break_default');
+                        var resized = false;
+                        if (break_default) {
+                            minItems = break_default[0];
+                            maxItems = break_default[0];
+                            itemWidth = break_default[1];
+                            break_points = $slider.data('break_points');
+                            if (break_points) {
+                                for (i = 0; i < break_points.length; i++) {
+                                    if (winWidth < break_points[i][0]) {
+                                        minItems = break_points[i][1];
+                                        maxItems = break_points[i][1];
+                                        itemWidth = break_points[i][2];
+                                    }
+                                }
+                                if ($slider.move != minItems) {
+                                    $slider.setOptions({
+                                        minItems: minItems,
+                                        maxItems: maxItems,
+                                        itemWidth: itemWidth,
+                                        move: minItems
+                                    });
+                                    resized = true;
+                                    setTimeout(function() {
+                                        if ($slider.w > 0 && $slider.h > 0)
+                                            $slider.resize();
+                                    }, 400);
+                                }
+                            }
+                        }
+                        if (!resized)
+                            $slider.resize();
+                    }
+                });
+            }
+        }
+        if (venedor_timer) clearTimeout(venedor_timer); 
+    }
+
+    $(window).load(venedor_resize);
+    $(window).resize(function() {
+        clearTimeout(venedor_timer); 
+        venedor_timer = setTimeout(venedor_resize, 400); 
+    });
+    function setHeight() {
+        // var winWidth = $('.main-slider').innerWidth();
+        // $("#homeslider-sequence").css("height",winWidth/4);
+    }
+//banner autosize start
+    $(window).resize(function() {
+    	setHeight();
+    });
+    setHeight();
+//banner autosize end
+});
+//]]>
+</script>
+<!-- Start of StatCounter Code for Default Guide -->
+<script type="text/javascript">
+var sc_project=5969124; 
+var sc_invisible=0; 
+var sc_security="7aa4f74d"; 
+var sc_https=1; 
+//var scJsHost = (("https:" == document.location.protocol) ?
+//"https://secure." : "http://www.");
+//document.write("<sc"+"ript type='text/javascript' src='" +
+//scJsHost+
+//"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<script type="text/javascript"
+    src="https://secure.statcounter.com/counter/counter.js"></script>
+<noscript><div class="statcounter"><a title="Web Analytics
+Made Easy - StatCounter" href="http://statcounter.com/"
+target="_blank"><img class="statcounter"
+src="//c.statcounter.com/5969124/0/7aa4f74d/0/" alt="Web
+Analytics Made Easy - StatCounter"></a></div></noscript>
+<!-- End of StatCounter Code for Default Guide -->
+
+<script type="text/javascript">
+jQuery(function($){
+			$('.statcounter').find('img').css('width','1px');
+			$('.statcounter').find('img').css('height','1px');
+
+});
+</script>                
+
+    </div>
+<script type="text/javascript" src="https://static.waveshare.com/wtpkg/ws-chat.js"></script></body>
+</html>
